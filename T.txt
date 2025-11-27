@@ -1,1731 +1,260 @@
-# classes7.dex
-
-.class public final Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;
-.super Lqy/a;
-.source "VotePostView.kt"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;
-    }
-.end annotation
-
-.annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\n\b\u0007\u0018\u0000 I2\u00020\u0001:\u0001JB\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007J\u000f\u0010\t\u001a\u00020\bH\u0002¢\u0006\u0004\b\t\u0010\nJ\u0017\u0010\f\u001a\u00020\u000b2\u0006\u0010\u0005\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\f\u0010\rJ\u000f\u0010\u000e\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u000e\u0010\u000fJ\u000f\u0010\u0010\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0010\u0010\u000fJ\u000f\u0010\u0011\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0011\u0010\u000fJ\u000f\u0010\u0012\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0012\u0010\u000fJ\u000f\u0010\u0013\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0013\u0010\u000fJ%\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\u0014\u001a\u00020\b2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015H\u0002¢\u0006\u0004\b\u0017\u0010\u0018J%\u0010\u0019\u001a\u00020\u000b2\u0006\u0010\u0014\u001a\u00020\b2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015H\u0002¢\u0006\u0004\b\u0019\u0010\u0018J\u001d\u0010\u001a\u001a\u00020\u000b2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015H\u0002¢\u0006\u0004\b\u001a\u0010\u001bJ\u001d\u0010\u001c\u001a\u00020\u000b2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015H\u0002¢\u0006\u0004\b\u001c\u0010\u001bJ\u000f\u0010\u001d\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u001d\u0010\u000fJ\u0015\u0010 \u001a\u00020\u000b2\u0006\u0010\u001f\u001a\u00020\u001e¢\u0006\u0004\b \u0010!J!\u0010%\u001a\u00020\u000b2\b\b\u0002\u0010#\u001a\u00020\"2\b\b\u0002\u0010$\u001a\u00020\b¢\u0006\u0004\b%\u0010&J8\u0010,\u001a\u00020\u000b2)\u0010+\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*¢\u0006\u0004\b,\u0010-J8\u0010.\u001a\u00020\u000b2)\u0010+\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*¢\u0006\u0004\b.\u0010-J8\u0010/\u001a\u00020\u000b2)\u0010+\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*¢\u0006\u0004\b/\u0010-J-\u00101\u001a\u00020\u000b2\u0006\u00100\u001a\u00020\b2\u0006\u0010\u0014\u001a\u00020\b2\u000e\b\u0002\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015¢\u0006\u0004\b1\u00102R\u0016\u0010$\u001a\u00020\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b3\u0010\u000eR\u0016\u0010#\u001a\u00020\"8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b4\u00105R9\u00108\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b6\u00107R9\u0010:\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b9\u00107R9\u0010<\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b;\u00107R\u0016\u0010@\u001a\u00020=8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b>\u0010?R\"\u0010H\u001a\u00020A8\u0006@\u0006X\u0087.¢\u0006\u0012\n\u0004\bB\u0010C\u001a\u0004\bD\u0010E\"\u0004\bF\u0010G¨\u0006K"
-    }
-    d2 = {
-        "Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;",
-        "Landroidx/constraintlayout/widget/ConstraintLayout;",
-        "Landroid/content/Context;",
-        "context",
-        "Landroid/util/AttributeSet;",
-        "attrs",
-        "<init>",
-        "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
-        "",
-        "i0",
-        "()Z",
-        "",
-        "g0",
-        "(Landroid/util/AttributeSet;)V",
-        "Z",
-        "()V",
-        "c0",
-        "q0",
-        "a0",
-        "o0",
-        "skipAnimation",
-        "Lkotlin/Function0;",
-        "onAnimationEnd",
-        "n0",
-        "(ZLkotlin/jvm/functions/Function0;)V",
-        "b0",
-        "S",
-        "(Lkotlin/jvm/functions/Function0;)V",
-        "W",
-        "j0",
-        "",
-        "value",
-        "setVotesCount",
-        "(I)V",
-        "Lrz/b;",
-        "voteType",
-        "isDisabled",
-        "r0",
-        "(Lrz/b;Z)V",
-        "Lkotlin/Function1;",
-        "Lkotlin/ParameterName;",
-        "name",
-        "Lcom/jodelapp/jodelandroidv3/view/vote_view/VoteButtonClickListener;",
-        "onClick",
-        "setOnUpVoteClickListener",
-        "(Lkotlin/jvm/functions/Function1;)V",
-        "setOnDownVoteClickListener",
-        "setOnThanksClickListener",
-        "isThankable",
-        "k0",
-        "(ZZLkotlin/jvm/functions/Function0;)V",
-        "C",
-        "D",
-        "Lrz/b;",
-        "E",
-        "Lkotlin/jvm/functions/Function1;",
-        "onUpVoteClicked",
-        "F",
-        "onDownVoteClicked",
-        "G",
-        "onThanksClicked",
-        "La20/q3;",
-        "H",
-        "La20/q3;",
-        "binding",
-        "Lcom/jodelapp/jodelandroidv3/usecases/p0;",
-        "I",
-        "Lcom/jodelapp/jodelandroidv3/usecases/p0;",
-        "h0",
-        "()Lcom/jodelapp/jodelandroidv3/usecases/p0;",
-        "setLiteExperienceEnabled",
-        "(Lcom/jodelapp/jodelandroidv3/usecases/p0;)V",
-        "isLiteExperienceEnabled",
-        "J",
-        "a",
-        "app_release"
-    }
-    k = 0x1
-    mv = {
-        0x2,
-        0x2,
-        0x0
-    }
-    xi = 0x30
-.end annotation
-
-
-# static fields
-.field public static final J:Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;
-
-.field public static final K:I
-
-
-# instance fields
-.field public C:Z
-
-.field public D:Lrz/b;
-
-.field public E:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1<",
-            "-",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public F:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1<",
-            "-",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public G:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1<",
-            "-",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public H:La20/q3;
-
-.field public I:Lcom/jodelapp/jodelandroidv3/usecases/p0;
-    .annotation runtime Ljavax/inject/Inject;
-    .end annotation
-.end field
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .registers 2
-
-    .line 1
-    new-instance v0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;
-
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {v0, v1}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    .line 7
-    sput-object v0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->J:Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;
-
-    .line 9
-    const/16 v0, 0x8
-
-    .line 11
-    sput v0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->K:I
-
-    .line 13
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .registers 4
-
-    .line 1
-    const-string v0, "context"
-
-    .line 3
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 6
-    const-string v0, "attrs"
-
-    .line 8
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 11
-    invoke-direct {p0, p1, p2}, Lqy/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    .line 14
-    sget-object v0, Lrz/b;->a:Lrz/b;
-
-    .line 16
-    iput-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->D:Lrz/b;
-
-    .line 18
-    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    .line 21
-    move-result-object p1
-
-    .line 22
-    const/4 v0, 0x1
-
-    .line 23
-    invoke-static {p1, p0, v0}, La20/q3;->c(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)La20/q3;
-
-    .line 26
-    move-result-object p1
-
-    .line 27
-    const-string v0, "inflate(...)"
-
-    .line 29
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 32
-    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 34
-    invoke-virtual {p0, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->g0(Landroid/util/AttributeSet;)V
-
-    .line 37
-    invoke-direct {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->c0()V
-
-    .line 40
-    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->j0()V
-
-    .line 43
-    return-void
-.end method
-
-.method public static synthetic I(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 3
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->T(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic J(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-    .registers 2
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->d0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic K(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 3
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->X(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic L(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)Lkotlin/Unit;
-    .registers 1
-
-    .line 1
-    invoke-static {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->p0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)Lkotlin/Unit;
-
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static synthetic M(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 3
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->V(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic N(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-    .registers 2
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->e0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic O(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 3
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->Y(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic P(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-    .registers 2
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->f0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic Q(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 3
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->U(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic R()Lkotlin/Unit;
-    .registers 1
-
-    .line 1
-    invoke-static {}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->m0()Lkotlin/Unit;
-
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public static final T(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 5
-
-    .line 1
-    sget-object p2, Lcom/daimajia/androidanimations/library/Techniques;->SlideOutUp:Lcom/daimajia/androidanimations/library/Techniques;
-
-    .line 3
-    invoke-static {p2}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
-
-    .line 6
-    move-result-object p2
-
-    .line 7
-    const-string v0, "with(...)"
-
-    .line 9
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 12
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 14
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 16
-    const-string v1, "upVoteButton"
-
-    .line 18
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 21
-    new-instance v1, Lqy/j;
-
-    .line 23
-    invoke-direct {v1, p0, p1}, Lqy/j;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
-
-    .line 26
-    const-wide/16 p0, 0x12c
-
-    .line 28
-    invoke-static {p2, p0, p1, v0, v1}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
-
-    .line 31
-    return-void
-.end method
-
-.method public static final U(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 12
-
-    .line 1
-    iget-object p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 3
-    iget-object p2, p2, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 5
-    const-string v0, "upVoteButton"
-
-    .line 7
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 10
-    invoke-static {p2}, Lex/m;->x(Landroid/view/View;)V
-
-    .line 13
-    iget-object p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 15
-    iget-object p2, p2, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 17
-    invoke-static {p2}, Lex/m;->n(Landroid/view/View;)V
-
-    .line 20
-    sget-object p2, Lcom/daimajia/androidanimations/library/Techniques;->SlideInUp:Lcom/daimajia/androidanimations/library/Techniques;
-
-    .line 22
-    invoke-static {p2}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
-
-    .line 25
-    move-result-object p2
-
-    .line 26
-    const-string v1, "with(...)"
-
-    .line 28
-    invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 31
-    iget-object v2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 33
-    iget-object v2, v2, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 35
-    const-string v3, "thanksButton"
-
-    .line 37
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 40
-    new-instance v3, Lqy/k;
-
-    .line 42
-    invoke-direct {v3, p0, p1}, Lqy/k;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
-
-    .line 45
-    const-wide/16 v4, 0x190
-
-    .line 47
-    invoke-static {p2, v4, v5, v2, v3}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
-
-    .line 50
-    sget-object p1, Lcom/daimajia/androidanimations/library/Techniques;->SlideInDown:Lcom/daimajia/androidanimations/library/Techniques;
-
-    .line 52
-    invoke-static {p1}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
-
-    .line 55
-    move-result-object v2
-
-    .line 56
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 59
-    iget-object p0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 61
-    iget-object v5, p0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 63
-    invoke-static {v5, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 66
-    const/4 v7, 0x4
-
-    .line 67
-    const/4 v8, 0x0
-
-    .line 68
-    const-wide/16 v3, 0x0
-
-    .line 70
-    const/4 v6, 0x0
-
-    .line 71
-    invoke-static/range {v2 .. v8}, Lcx/p;->q(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;ILjava/lang/Object;)V
-
-    .line 74
-    return-void
-.end method
-
-.method public static final V(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 3
-
-    .line 1
-    invoke-direct {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->c0()V
-
-    .line 4
-    invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 7
-    return-void
-.end method
-
-.method public static final X(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 12
-
-    .line 1
-    iget-object p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 3
-    iget-object p2, p2, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 5
-    const-string v0, "thanksButton"
-
-    .line 7
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 10
-    invoke-static {p2}, Lex/m;->x(Landroid/view/View;)V
-
-    .line 13
-    iget-object p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 15
-    iget-object p2, p2, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 17
-    invoke-static {p2}, Lex/m;->n(Landroid/view/View;)V
-
-    .line 20
-    sget-object p2, Lcom/daimajia/androidanimations/library/Techniques;->SlideInDown:Lcom/daimajia/androidanimations/library/Techniques;
-
-    .line 22
-    invoke-static {p2}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
-
-    .line 25
-    move-result-object p2
-
-    .line 26
-    const-string v1, "with(...)"
-
-    .line 28
-    invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 31
-    iget-object v2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 33
-    iget-object v2, v2, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 35
-    const-string v3, "upVoteButton"
-
-    .line 37
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 40
-    new-instance v3, Lqy/i;
-
-    .line 42
-    invoke-direct {v3, p0, p1}, Lqy/i;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
-
-    .line 45
-    const-wide/16 v4, 0x190
-
-    .line 47
-    invoke-static {p2, v4, v5, v2, v3}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
-
-    .line 50
-    sget-object p1, Lcom/daimajia/androidanimations/library/Techniques;->SlideInUp:Lcom/daimajia/androidanimations/library/Techniques;
-
-    .line 52
-    invoke-static {p1}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
-
-    .line 55
-    move-result-object v2
-
-    .line 56
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 59
-    iget-object p0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 61
-    iget-object v5, p0, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 63
-    invoke-static {v5, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 66
-    const/4 v7, 0x4
-
-    .line 67
-    const/4 v8, 0x0
-
-    .line 68
-    const-wide/16 v3, 0x0
-
-    .line 70
-    const/4 v6, 0x0
-
-    .line 71
-    invoke-static/range {v2 .. v8}, Lcx/p;->q(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;ILjava/lang/Object;)V
-
-    .line 74
-    return-void
-.end method
-
-.method public static final Y(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
-    .registers 3
-
-    .line 1
-    invoke-direct {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->c0()V
-
-    .line 4
-    invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 7
-    return-void
-.end method
-
-.method private final c0()V
-    .registers 3
-
-    .line 1
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 3
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 5
-    new-instance v1, Lqy/b;
-
-    .line 7
-    invoke-direct {v1, p0}, Lqy/b;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)V
-
-    .line 10
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 13
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 15
-    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
-
-    .line 17
-    new-instance v1, Lqy/c;
-
-    .line 19
-    invoke-direct {v1, p0}, Lqy/c;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)V
-
-    .line 22
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 25
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 27
-    iget-object v0, v0, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 29
-    new-instance v1, Lqy/d;
-
-    .line 31
-    invoke-direct {v1, p0}, Lqy/d;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)V
-
-    .line 34
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 37
-    return-void
-.end method
-
-.method public static final d0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-    .registers 2
-
-    .line 1
-    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->q0()V
-
-    .line 4
-    return-void
-.end method
-
-.method public static final e0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-    .registers 2
-
-    .line 1
-    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->a0()V
-
-    .line 4
-    return-void
-.end method
-
-.method public static final f0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
-    .registers 2
-
-    .line 1
-    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->o0()V
-
-    .line 4
-    return-void
-.end method
-
-.method public static synthetic l0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;ZZLkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
-    .registers 6
-
-    .line 1
-    and-int/lit8 p4, p4, 0x4
-
-    .line 3
-    if-eqz p4, :cond_9
-
-    .line 5
-    new-instance p3, Lqy/g;
-
-    .line 7
-    invoke-direct {p3}, Lqy/g;-><init>()V
-
-    .line 10
-    :cond_9
-    invoke-virtual {p0, p1, p2, p3}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->k0(ZZLkotlin/jvm/functions/Function0;)V
-
-    .line 13
-    return-void
-.end method
-
-.method public static final m0()Lkotlin/Unit;
-    .registers 1
-
-    .line 1
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 3
-    return-object v0
-.end method
-
-.method public static final p0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)Lkotlin/Unit;
-    .registers 2
-
-    .line 1
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->G:Lkotlin/jvm/functions/Function1;
-
-    .line 3
-    if-eqz v0, :cond_d
-
-    .line 5
-    iget-boolean p0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
-
-    .line 7
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 10
-    move-result-object p0
-
-    .line 11
-    invoke-interface {v0, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 14
-    :cond_d
-    sget-object p0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 16
-    return-object p0
-.end method
-
-.method public static synthetic s0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lrz/b;ZILjava/lang/Object;)V
-    .registers 5
-
-    .line 1
-    and-int/lit8 p4, p3, 0x1
-
-    .line 3
-    if-eqz p4, :cond_6
-
-    .line 5
-    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->D:Lrz/b;
-
-    .line 7
-    :cond_6
-    and-int/lit8 p3, p3, 0x2
-
-    .line 9
-    if-eqz p3, :cond_c
-
-    .line 11
-    iget-boolean p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
-
-    .line 13
-    :cond_c
-    invoke-virtual {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->r0(Lrz/b;Z)V
-
-    .line 16
-    return-void
-.end method
-
-
-# virtual methods
-.method public final S(Lkotlin/jvm/functions/Function0;)V
-    .registers 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->Z()V
-
-    .line 4
-    sget-object v0, Lcom/daimajia/androidanimations/library/Techniques;->Tada:Lcom/daimajia/androidanimations/library/Techniques;
-
-    .line 6
-    invoke-static {v0}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
-
-    .line 9
-    move-result-object v0
-
-    .line 10
-    const-string v1, "with(...)"
-
-    .line 12
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 15
-    iget-object v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 17
-    iget-object v1, v1, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 19
-    const-string v2, "upVoteButton"
-
-    .line 21
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 24
-    new-instance v2, Lqy/h;
-
-    .line 26
-    invoke-direct {v2, p0, p1}, Lqy/h;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
-
-    .line 29
-    const-wide/16 v3, 0x12c
-
-    .line 31
-    invoke-static {v0, v3, v4, v1, v2}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
-
-    .line 34
-    return-void
-.end method
-
-.method public final W(Lkotlin/jvm/functions/Function0;)V
-    .registers 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->Z()V
-
-    .line 4
-    sget-object v0, Lcom/daimajia/androidanimations/library/Techniques;->SlideOutDown:Lcom/daimajia/androidanimations/library/Techniques;
-
-    .line 6
-    invoke-static {v0}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
-
-    .line 9
-    move-result-object v0
-
-    .line 10
-    const-string v1, "with(...)"
-
-    .line 12
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 15
-    iget-object v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 17
-    iget-object v1, v1, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 19
-    const-string v2, "thanksButton"
-
-    .line 21
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 24
-    new-instance v2, Lqy/f;
-
-    .line 26
-    invoke-direct {v2, p0, p1}, Lqy/f;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
-
-    .line 29
-    const-wide/16 v3, 0x12c
-
-    .line 31
-    invoke-static {v0, v3, v4, v1, v2}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
-
-    .line 34
-    return-void
-.end method
-
-.method public final Z()V
-    .registers 3
-
-    .line 1
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 3
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 5
-    const/4 v1, 0x0
-
-    .line 6
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 9
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 11
-    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
-
-    .line 13
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 16
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 18
-    iget-object v0, v0, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 20
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 23
-    return-void
-.end method
-
-.method public final a0()V
-    .registers 3
-
-    .line 1
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->F:Lkotlin/jvm/functions/Function1;
-
-    .line 3
-    if-eqz v0, :cond_d
-
-    .line 5
-    iget-boolean v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
-
-    .line 7
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 10
-    move-result-object v1
-
-    .line 11
-    invoke-interface {v0, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 14
-    :cond_d
-    return-void
-.end method
-
-.method public final b0(ZLkotlin/jvm/functions/Function0;)V
-    .registers 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(Z",
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    if-eqz p1, :cond_19
-
-    .line 3
-    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 5
-    iget-object p1, p1, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 7
-    const-string v0, "thanksButton"
-
-    .line 9
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 12
-    invoke-static {p1}, Lex/m;->x(Landroid/view/View;)V
-
-    .line 15
-    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 17
-    iget-object p1, p1, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 19
-    invoke-static {p1}, Lex/m;->n(Landroid/view/View;)V
-
-    .line 22
-    invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 25
-    return-void
-
-    .line 26
-    :cond_19
-    invoke-virtual {p0, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->W(Lkotlin/jvm/functions/Function0;)V
-
-    .line 29
-    return-void
-.end method
-
-.method public final g0(Landroid/util/AttributeSet;)V
-    .registers 5
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    .line 8
-    move-result-object v0
-
-    .line 9
-    sget-object v1, Lz10/a;->VotePostView:[I
-
-    .line 11
-    const/4 v2, 0x0
-
-    .line 12
-    invoke-virtual {v0, p1, v1, v2, v2}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
-
-    .line 15
-    move-result-object p1
-
-    .line 16
-    :try_start_f
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 18
-    iget-object v0, v0, La20/q3;->f:Lcom/pixplicity/fontview/FontTextView;
-
-    .line 20
-    const/4 v1, 0x1
-
-    .line 21
-    invoke-virtual {p1, v2, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
-
-    .line 24
-    move-result v1
-
-    .line 25
-    invoke-static {v0, v1}, Lex/m;->p(Landroid/view/View;Z)V
-    :try_end_1b
-    .catchall {:try_start_f .. :try_end_1b} :catchall_1f
-
-    .line 28
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
-
-    .line 31
-    return-void
-
-    .line 32
-    :catchall_1f
-    move-exception v0
-
-    .line 33
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
-
-    .line 36
-    throw v0
-.end method
-
-.method public final h0()Lcom/jodelapp/jodelandroidv3/usecases/p0;
-    .registers 2
-
-    .line 1
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->I:Lcom/jodelapp/jodelandroidv3/usecases/p0;
-
-    .line 3
-    if-eqz v0, :cond_5
-
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_5
-    const-string v0, "isLiteExperienceEnabled"
-
-    .line 8
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->A(Ljava/lang/String;)V
-
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    return-object v0
-.end method
-
-.method public final i0()Z
-    .registers 2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
-
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_8
-
-    .line 7
-    const/4 v0, 0x0
-
-    .line 8
-    return v0
-
-    .line 9
-    :cond_8
-    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->h0()Lcom/jodelapp/jodelandroidv3/usecases/p0;
-
-    .line 12
-    move-result-object v0
-
-    .line 13
-    invoke-virtual {v0}, Lcom/jodelapp/jodelandroidv3/usecases/p0;->a()Z
-
-    .line 16
-    move-result v0
-
-    .line 17
-    return v0
-.end method
-
-.method public final j0()V
-    .registers 4
-
-    .line 1
-    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->i0()Z
-
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_20
-
-    .line 7
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 9
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 11
-    invoke-virtual {v0}, Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;->b()V
-
-    .line 14
-    const v0, 0x7f080652
-
-    .line 17
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 20
-    move-result-object v0
-
-    .line 21
-    const v1, 0x7f080654
-
-    .line 24
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 27
-    move-result-object v1
-
-    .line 28
-    invoke-static {v0, v1}, Lkotlin/TuplesKt;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-
-    .line 31
-    move-result-object v0
-
-    .line 32
-    goto :goto_32
-
-    .line 33
-    :cond_20
-    const v0, 0x7f080651
-
-    .line 36
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 39
-    move-result-object v0
-
-    .line 40
-    const v1, 0x7f080653
-
-    .line 43
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 46
-    move-result-object v1
-
-    .line 47
-    invoke-static {v0, v1}, Lkotlin/TuplesKt;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-
-    .line 50
-    move-result-object v0
-
-    .line 51
-    :goto_32
-    invoke-virtual {v0}, Lkotlin/Pair;->a()Ljava/lang/Object;
-
-    .line 54
-    move-result-object v1
-
-    .line 55
-    check-cast v1, Ljava/lang/Number;
-
-    .line 57
-    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
-
-    .line 60
-    move-result v1
-
-    .line 61
-    invoke-virtual {v0}, Lkotlin/Pair;->b()Ljava/lang/Object;
-
-    .line 64
-    move-result-object v0
-
-    .line 65
-    check-cast v0, Ljava/lang/Number;
-
-    .line 67
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    .line 70
-    move-result v0
-
-    .line 71
-    iget-object v2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 73
-    iget-object v2, v2, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
-
-    .line 75
-    invoke-virtual {v2, v1}, Landroidx/appcompat/widget/m;->setImageResource(I)V
-
-    .line 78
-    iget-object v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 80
-    iget-object v1, v1, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 82
-    invoke-virtual {v1, v0}, Landroidx/appcompat/widget/m;->setImageResource(I)V
-
-    .line 85
-    return-void
-.end method
-
-.method public final k0(ZZLkotlin/jvm/functions/Function0;)V
-    .registers 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(ZZ",
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    const-string v0, "onAnimationEnd"
-
-    .line 3
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 6
-    if-eqz p1, :cond_b
-
-    .line 8
-    invoke-virtual {p0, p2, p3}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->n0(ZLkotlin/jvm/functions/Function0;)V
-
-    .line 11
-    return-void
-
-    .line 12
-    :cond_b
-    invoke-virtual {p0, p2, p3}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->b0(ZLkotlin/jvm/functions/Function0;)V
-
-    .line 15
-    return-void
-.end method
-
-.method public final n0(ZLkotlin/jvm/functions/Function0;)V
-    .registers 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(Z",
-            "Lkotlin/jvm/functions/Function0<",
-            "Lkotlin/Unit;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    if-eqz p1, :cond_19
-
-    .line 3
-    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 5
-    iget-object p1, p1, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 7
-    const-string v0, "upVoteButton"
-
-    .line 9
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 12
-    invoke-static {p1}, Lex/m;->x(Landroid/view/View;)V
-
-    .line 15
-    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 17
-    iget-object p1, p1, La20/q3;->c:Landroid/widget/ImageView;
-
-    .line 19
-    invoke-static {p1}, Lex/m;->n(Landroid/view/View;)V
-
-    .line 22
-    invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 25
-    return-void
-
-    .line 26
-    :cond_19
-    invoke-virtual {p0, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->S(Lkotlin/jvm/functions/Function0;)V
-
-    .line 29
-    return-void
-.end method
-
-.method public final o0()V
-    .registers 3
-
-    .line 1
-    new-instance v0, Lqy/e;
-
-    .line 3
-    invoke-direct {v0, p0}, Lqy/e;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)V
-
-    .line 6
-    const/4 v1, 0x0
-
-    .line 7
-    invoke-virtual {p0, v1, v0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->b0(ZLkotlin/jvm/functions/Function0;)V
-
-    .line 10
-    return-void
-.end method
-
-.method public final q0()V
-    .registers 3
-
-    .line 1
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->E:Lkotlin/jvm/functions/Function1;
-
-    .line 3
-    if-eqz v0, :cond_d
-
-    .line 5
-    iget-boolean v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
-
-    .line 7
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 10
-    move-result-object v1
-
-    .line 11
-    invoke-interface {v0, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 14
-    :cond_d
-    return-void
-.end method
-
-.method public final r0(Lrz/b;Z)V
-    .registers 5
-
-    .line 1
-    const-string v0, "voteType"
-
-    .line 3
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 6
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 8
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 10
-    invoke-virtual {p1}, Lrz/b;->e()Z
-
-    .line 13
-    move-result v1
-
-    .line 14
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 16
-    invoke-virtual {v0, v1}, Landroid/view/View;->setActivated(Z)V
-
-    .line 19
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 21
-    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
-
-    .line 23
-    invoke-virtual {p1}, Lrz/b;->e()Z
-
-    .line 26
-    move-result v1
-
-    .line 27
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 29
-    invoke-virtual {v0, v1}, Landroid/view/View;->setActivated(Z)V
-
-    .line 32
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 34
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 36
-    invoke-virtual {v0, p2}, Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;->setReadOnly(Z)V
-
-    .line 39
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 41
-    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
-
-    .line 43
-    invoke-virtual {v0, p2}, Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;->setReadOnly(Z)V
-
-    .line 46
-    invoke-virtual {p1}, Lrz/b;->e()Z
-
-    .line 49
-    move-result v0
-
-    .line 50
-    if-eqz v0, :cond_42
-
-    .line 52
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 54
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 56
-    invoke-virtual {v0, p2}, Landroid/view/View;->setSelected(Z)V
-
-    .line 59
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 61
-    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
-
-    .line 63
-    invoke-virtual {v0, p2}, Landroid/view/View;->setSelected(Z)V
-
-    .line 66
-    goto :goto_6d
-
-    .line 67
-    :cond_42
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 69
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 71
-    invoke-virtual {p1}, Lrz/b;->f()Z
-
-    .line 74
-    move-result v1
-
-    .line 75
-    invoke-virtual {v0, v1}, Landroid/view/View;->setSelected(Z)V
-
-    .line 78
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 80
-    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
-
-    .line 82
-    invoke-virtual {p1}, Lrz/b;->b()Z
-
-    .line 85
-    move-result v1
-
-    .line 86
-    invoke-virtual {v0, v1}, Landroid/view/View;->setSelected(Z)V
-
-    .line 89
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->D:Lrz/b;
-
-    .line 91
-    invoke-virtual {v0}, Lrz/b;->e()Z
-
-    .line 94
-    move-result v0
-
-    .line 95
-    if-eqz v0, :cond_6d
-
-    .line 97
-    invoke-virtual {p1}, Lrz/b;->f()Z
-
-    .line 100
-    move-result v0
-
-    .line 101
-    if-eqz v0, :cond_6d
-
-    .line 103
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 105
-    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
-
-    .line 107
-    invoke-virtual {v0}, Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;->c()V
-
-    .line 110
-    :cond_6d
-    :goto_6d
-    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->D:Lrz/b;
-
-    .line 112
-    iput-boolean p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
-
-    .line 114
-    return-void
-.end method
-
-.method public final setLiteExperienceEnabled(Lcom/jodelapp/jodelandroidv3/usecases/p0;)V
-    .registers 3
-
-    .line 1
-    const-string v0, "<set-?>"
-
-    .line 3
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 6
-    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->I:Lcom/jodelapp/jodelandroidv3/usecases/p0;
-
-    .line 8
-    return-void
-.end method
-
-.method public final setOnDownVoteClickListener(Lkotlin/jvm/functions/Function1;)V
-    .registers 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1<",
-            "-",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/Unit;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->F:Lkotlin/jvm/functions/Function1;
-
-    .line 3
-    return-void
-.end method
-
-.method public final setOnThanksClickListener(Lkotlin/jvm/functions/Function1;)V
-    .registers 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1<",
-            "-",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/Unit;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->G:Lkotlin/jvm/functions/Function1;
-
-    .line 3
-    return-void
-.end method
-
-.method public final setOnUpVoteClickListener(Lkotlin/jvm/functions/Function1;)V
-    .registers 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1<",
-            "-",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/Unit;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->E:Lkotlin/jvm/functions/Function1;
-
-    .line 3
-    return-void
-.end method
-
-.method public final setVotesCount(I)V
-    .registers 5
-
-    .line 1
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 3
-    iget-object v0, v0, La20/q3;->f:Lcom/pixplicity/fontview/FontTextView;
-
-    .line 5
-    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    .line 8
-    move-result-object v1
-
-    .line 9
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 12
-    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
-
-    .line 14
-    iget-object v0, v0, La20/q3;->f:Lcom/pixplicity/fontview/FontTextView;
-
-    .line 16
-    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
-    .line 19
-    move-result-object v1
-
-    .line 20
-    const v2, 0x7f1301c1
-
-    .line 23
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    .line 26
-    move-result-object v1
-
-    .line 27
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 29
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 32
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 35
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 38
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 41
-    move-result-object p1
-
-    .line 42
-    invoke-virtual {v0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    .line 45
-    return-void
-.end method
+D/FreecessController( 1850): com.plato.androie(10493) is important[2]
+D/io_stats(  665): !@ Read_top(KB): m.plato.androie(29771) 132 .openai.chatgpt(7933) 4
+D/PerProcessNandswap$NandswapMsgHandler( 1850): startNandswapProcess to-delay Cached-ppn com.plato.androie
+V/WindowManager( 1850): Collecting in transition 78: Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}, caller=com.android.server.wm.TransitionController.collect:7 com.android.server.wm.ActivityTaskSupervisor.findTaskToMoveToFront:114 com.android.server.wm.ActivityTaskManagerService.moveTaskToFrontLocked:222 com.android.server.wm.ActivityTaskSupervisor.startActivityFromRecents:849 com.android.server.wm.ActivityTaskManagerService.startActivityFromRecents:31 
+D/WindowManager( 1850): prepareSync <SYNC_STATE_WAITING_FOR_DRAW>, mPrepareSyncSeqId=0, win=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}
+I/Pageboost( 1850): moveTaskToFront : 10493:com.plato.androie
+V/WindowManager( 1850): Add starting ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}: startingData=SnapshotStartingData{7864bc0 waitForSyncTransactionCommit=false removeAfterTransaction= 0}
+V/WindowManager( 1850): Added starting ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}: startingWindow=null startingView=com.android.server.wm.StartingSurfaceController$StartingSurface@5c2f0f9
+V/WindowManagerShell( 3222): Transition requested (#78): android.os.BinderProxy@6579a10 TransitionRequestInfo { type = TO_FRONT, triggerTask = TaskInfo{userId=0 taskId=1060 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.plato.androie/com.playchat.ui.activity.SplashActivity } baseActivity=ComponentInfo{com.plato.androie/com.playchat.ui.activity.MainActivity} topActivity=ComponentInfo{com.plato.androie/com.playchat.ui.activity.MainActivity} origActivity=null realActivity=ComponentInfo{com.plato.androie/com.playchat.ui.activity.SplashActivity} numActivities=1 lastActiveTime=753121 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 maxWidth=-1 maxHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@c9da909} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 100 - 0, 0) topActivityInfo=ActivityInfo{e97e70e com.playchat.ui.activity.MainActivity} launchCookies=[android.os.BinderProxy@a28b410] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isTopActivityStyleFloating=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1440 topActivityLetterboxHeight=3200 topActivityLetterboxAppWidth=1440 topActivityLetterboxAppHeight=3200 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive} topActivityBounds=null topActivityInDisplayCompat=false} originallySupportedMultiWindow=true hasWallpaper=false rootAffinity=10493:com.plato.androie isTopTaskInStage=false topActivityUiMode=33 CoverLauncherWidgetTask=false isAllowedSeamlessRotation=false isTopTransparentActivity=false snappingGuideBounds=Rect(108, 761 - 1332, 2361) isAliasManaged=false hasConfigChanged=false isAiKeyRemoveAppTask=false}, pipTask = null, remoteTransition = RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@1e7d52f, appThread = android.app.IApplicationThread$Stub$Proxy@404473c, debugName = QuickstepLaunchflags =NONE }, displayChange = null, flags = 0, debugId = 78 }
+V/WindowManager( 1850): addWindow: ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060} startingWindow=Window{558b69f u0 SnapshotStartingWindow for taskId=1060}
+D/WindowManagerShell( 3222): onActivityRestartAttempt: ComponentInfo{com.plato.androie/com.playchat.ui.activity.MainActivity}
+I/PerProcessNandswap$NandswapMsgHandler( 1850): madvise_prefetch for com.plato.androie
+V/WindowManager( 1850): Collecting in transition 78: ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}, caller=com.android.server.wm.TransitionController.collect:7 com.android.server.wm.ActivityRecord.setVisibility:189 com.android.server.wm.TaskFragment.resumeTopActivity:1735 com.android.server.wm.Task.resumeTopActivityInnerLocked:98 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:23 
+V/WindowManager( 1850): Setting visibility of Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}: true, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:19 com.android.server.wm.WindowToken.setClientVisible:49 com.android.server.wm.ActivityRecord.setVisibility:392 com.android.server.wm.TaskFragment.resumeTopActivity:1735 com.android.server.wm.Task.resumeTopActivityInnerLocked:98 
+D/SGM:FgCheckThread( 1850):   sendRunningComponentFocus(), pkgName: com.plato.androie, userId: 0
+D/SGM:FgCheckThread( 1850): onLooperPrepared(), msg: MSG_TASK_FOCUSED, pkgName: com.plato.androie, userId: 0
+D/SGM:FgCheckThread( 1850):   handleTaskFocused(), pkgName: com.plato.androie, userID:0
+D/SGM:FgCheckThread( 1850):   handleResume(). pkgName: com.plato.androie, userId: 0, category: non-game
+D/SGM:FgCheckThread( 1850): notifyFocusInOut(). of pkg: com.plato.androie, type: 4, isSecGameFamily: false, userId: 0
+D/ActivityTaskManager( 1850): scheduleTopResumedActivityChanged, onTop=true, r=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}, caller=com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:62 com.android.server.wm.TaskFragment.setResumedActivity:29 com.android.server.wm.ActivityRecord.setState:104 com.android.server.wm.TaskFragment.resumeTopActivity:1817 com.android.server.wm.Task.resumeTopActivityInnerLocked:98 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:23 
+D/WindowManager( 1850): rotationForOrientation, orientationSource=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}
+D/WindowManagerServiceExt( 1850): updateTaskbarTargetIfNeeded: cn=ComponentInfo{com.plato.androie/com.playchat.ui.activity.MainActivity} occludesParent=true isInSplitScreenMode=false styleFloating=false
+D/BLASTSyncEngine( 1850): SyncGroup 78:  Unfinished container: Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie} mSyncState=2
+V/WindowManager( 1850): Start calculating TransitionInfo based on participants: {ActivityRecord{2bb3d2e u0 com.sec.android.app.launcher/com.android.quickstep.RecentsActivity t1045}, WallpaperWindowToken{43e29d5 token=android.os.Binder@a51ae8c}_<lock>, ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}, WallpaperWindowToken{b2e2ddf token=android.os.Binder@1f2747e}_<system>, Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}}
+V/WindowManager( 1850):   Final targets: [Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}, Task{5ca3165 #1045 type=recents I=com.sec.android.app.launcher/com.android.quickstep.RecentsActivity}, WallpaperWindowToken{b2e2ddf token=android.os.Binder@1f2747e}_<system>]
+V/WindowManager( 1850):         {WCT{RemoteToken{f471b92 Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}}} m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=1060)/@0xc1bf1f4 sb=Rect(0, 0 - 1440, 3200) eb=Rect(0, 0 - 1440, 3200) d=0 taskParent=-1 inset=Rect(0, 102 - 0, 180) dim=true},
+D/InsetsSourceProvider( 1850): updateControlForTarget: control=InsetsSourceControl: {56550001 mType=navigationBars initiallyVisible mSurfacePosition=Point(0, 3020) mInsetsHint=Insets{left=0, top=0, right=0, bottom=180}}, target=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.InsetsStateController.onControlTargetChanged:81 com.android.server.wm.InsetsPolicy.updateBarControlTarget:188 com.android.server.wm.DisplayPolicy.updateSystemBarAttributes:269 com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw:17 com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction$1:194 
+V/WindowManager( 1850): Sent Transition (#78) createdAt=11-27 10:57:53.289 via request=TransitionRequestInfo { type = TO_FRONT, triggerTask = TaskInfo{userId=0 taskId=1060 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.plato.androie/com.playchat.ui.activity.SplashActivity } baseActivity=ComponentInfo{com.plato.androie/com.playchat.ui.activity.MainActivity} topActivity=ComponentInfo{com.plato.androie/com.playchat.ui.activity.MainActivity} origActivity=null realActivity=ComponentInfo{com.plato.androie/com.playchat.ui.activity.SplashActivity} numActivities=1 lastActiveTime=753121 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 maxWidth=-1 maxHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{f471b92 Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 100 - 0, 0) topActivityInfo=ActivityInfo{c9c0775 com.playchat.ui.activity.MainActivity} launchCookies=[android.os.BinderProxy@2d3de19] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isTopActivityStyleFloating=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1440 topActivityLetterboxHeight=3200 topActivityLetterboxAppWidth=1440 topActivityLetterboxAppHeight=3200 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive} topActivityBounds=null topActivityInDisplayCompat=false} originallySupportedMultiWindow=true hasWallpaper=false rootAffinity=10493:com.plato.androie isTopTaskInStage=false topActivityUiMode=33 CoverLauncherWidgetTask=false isAllowedSeamlessRotation=false isTopTransparentActivity=false snappingGuideBounds=Rect(108, 761 - 1332, 2361) isAliasManaged=false hasConfigChanged=false isAiKeyRemoveAppTask=false}, pipTask = null, remoteTransition = RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@91cc631, appThread = android.app.IApplicationThread$Stub$Proxy@898116, debugName = QuickstepLaunchflags =NONE }, displayChange = null, flags = 0, debugId = 78 }
+V/WindowManager( 1850):         {WCT{RemoteToken{f471b92 Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}}} m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=1060)/@0xc1bf1f4 sb=Rect(0, 0 - 1440, 3200) eb=Rect(0, 0 - 1440, 3200) d=0 taskParent=-1 inset=Rect(0, 102 - 0, 180) dim=true},
+D/InsetsSourceProvider( 1850): updateControlForTarget: control=InsetsSourceControl: {98c90000 mType=statusBars initiallyVisible mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=102, right=0, bottom=0}}, target=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.InsetsStateController.onControlTargetChanged:81 com.android.server.wm.InsetsPolicy.updateBarControlTarget:175 com.android.server.wm.DisplayPolicy.updateSystemBarAttributes:269 com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw:17 com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction$1:194 
+D/WindowManager( 1850): updateSystemBarAttributes: displayId=0, focusedCanBeNavColorWin=false, win=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, navColorWin=Window{b30459f u0 com.sec.android.app.launcher/com.android.quickstep.RecentsActivity}, caller=com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw:17 com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction$1:194 com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace:61 
+D/SGM:GameManager( 1850): identifyGamePackage. com.plato.androie, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.SemGameManager.isGamePackage(SemGameManager.java:105)
+D/SGM:SemGameManager( 1850): isGamePackage(), pkgName=com.plato.androie, ret=false
+D/SGM:FgCheckThread( 1850): noteResumeComponent(), received pkgName: com.plato.androie, userId: 0
+D/SGM:FgCheckThread( 1850): onLooperPrepared(), msg: MSG_APP_RESUME, pkgName: com.plato.androie, userid: 0
+D/SGM:FgCheckThread( 1850):   handleResume(). pkgName: com.plato.androie, userId: 0, category: non-game
+D/SGM:FgCheckThread( 1850): notifyFocusInOut(). of pkg: com.plato.androie, type: 4, isSecGameFamily: false, userId: 0
+I/SDHMS:l ( 7995): handleResumeComponent : put = com.plato.androie, userid = 0 instanceid =184754650
+D/SGM:GameManager( 1850): identifyForegroundApp. com.plato.androie, mCurrentUserId: 0, callerUserId: 0
+D/SGM:GameManager( 1850): identifyGamePackage. com.plato.androie, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.IGameManagerService$Stub.onTransact(IGameManagerService.java:228)
+D/WindowManager( 1850): makeSurface duration=2 name=com.plato.androie/com.playchat.ui.activity.MainActivity$_29771
+D/WindowManager( 1850): Changing focus from null to Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity} displayId=0 Callers=com.android.server.wm.WindowManagerService.relayoutWindowInner:142 com.android.server.wm.WindowManagerService.relayoutWindow:6 com.android.server.wm.Session.relayout:27 android.view.IWindowSession$Stub.onTransact:861 
+V/SystemKeyManager( 1850): updateFocusedWindow() is called, com.plato.androie/com.playchat.ui.activity.MainActivity
+D/FreecessController( 1850): com.plato.androie(10493) is important[18]
+D/MdnieScenarioControlService( 1850):  packageName : com.plato.androie    className : com.playchat.ui.activity.MainActivity
+D/WindowManager( 1850): finishDrawingWindow: Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity} mDrawState=DRAW_PENDING seqId=0
+V/WindowManager( 1850): Finish starting ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}: first real window is shown, no animation
+V/WindowManager( 1850): Schedule remove starting ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060} startingWindow=Window{558b69f u0 SnapshotStartingWindow for taskId=1060} animate=false Callers=com.android.server.wm.ActivityRecord.removeStartingWindow:143 com.android.server.wm.WindowState.performShowLocked:147 com.android.server.wm.WindowStateAnimator.commitFinishDrawingLocked:59 com.android.server.wm.DisplayContent$$ExternalSyntheticLambda1.accept$com$android$server$wm$DisplayContent$$ExternalSyntheticLambda40:22 com.android.server.wm.DisplayContent$$ExternalSyntheticLambda1.accept:305 
+I/ActivityTaskManager( 1850): done cause=notifyWindowsDrawn timestamp=611786285254 info=TransitionInfo{f4775aa a=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060} d=true}
+V/WindowManager( 1850): performShowLocked: mDrawState=HAS_DRAWN in Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}
+D/InsetsSourceProvider( 1850): updateControlForTarget: control=InsetsSourceControl: {3 mType=ime mSurfacePosition=Point(0, 102) mInsetsHint=Insets{left=0, top=0, right=0, bottom=1644}}, target=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.ImeInsetsSourceProvider.updateControlForTarget:17 com.android.server.wm.InsetsStateController.onControlTargetChanged:81 com.android.server.wm.DisplayContent.updateImeControlTarget:21 com.android.server.wm.DisplayContent.updateImeInputAndControlTarget:81 com.android.server.wm.WindowManagerService$LocalService.updateInputMethodTargetWindow:21 
+I/WindowManager( 1850): Reparenting to leash, surface=Surface(name=558b69f SnapshotStartingWindow for taskId=1060)/@0x9f57db2, syncState=0, syncCommitDepth=0, leashParent=Surface(name=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060})/@0xe35476
+D/SGM:FgCheckThread( 1850): getForegroundApp(), foregroundPkgName=com.plato.androie
+W/JobScheduler( 1850): Job didn't exist in JobStore: 7bc5eb7 #u0a493/-2011549841 com.plato.androie/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+I/WindowManager( 1850): Reparenting to original parent: Surface(name=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060})/@0xe35476, destroy=true, syncState=0, syncCommitDepth=0, surface=Surface(name=558b69f SnapshotStartingWindow for taskId=1060)/@0x9f57db2
+D/MdnieScenarioControlService( 1850):  packageName : com.plato.androie    className : com.playchat.ui.activity.MainActivity
+D/SGM:GameManager( 1850): identifyForegroundApp. com.plato.androie, mCurrentUserId: 0, callerUserId: 0
+D/CoreBackPreview( 1850): Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f34a2fc, mPriority=0, mIsAnimationCallback=false}
+D/WindowManager( 1850): makeSurface duration=1 name=com.plato.androie/com.playchat.ui.activity.MainActivity$_29771
+D/WindowManager( 1850): Changing focus from Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity} to Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity} displayId=0 Callers=com.android.server.wm.WindowManagerService.relayoutWindowInner:142 com.android.server.wm.WindowManagerService.relayoutWindow:6 com.android.server.wm.Session.relayout:27 android.view.IWindowSession$Stub.onTransact:861 
+D/InsetsSourceProvider( 1850): updateControlForTarget: control=InsetsSourceControl: {56550001 mType=navigationBars initiallyVisible mSurfacePosition=Point(0, 3020) mInsetsHint=Insets{left=0, top=0, right=0, bottom=180}}, target=Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.InsetsStateController.onControlTargetChanged:81 com.android.server.wm.InsetsPolicy.updateBarControlTarget:188 com.android.server.wm.DisplayPolicy.updateSystemBarAttributes:269 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:375 com.android.server.wm.WindowManagerService.relayoutWindowInner:142 
+D/InsetsSourceProvider( 1850): updateControlForTarget: control=InsetsSourceControl: {98c90000 mType=statusBars initiallyVisible mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=102, right=0, bottom=0}}, target=Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.InsetsStateController.onControlTargetChanged:81 com.android.server.wm.InsetsPolicy.updateBarControlTarget:175 com.android.server.wm.DisplayPolicy.updateSystemBarAttributes:269 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:375 com.android.server.wm.WindowManagerService.relayoutWindowInner:142 
+V/SystemKeyManager( 1850): updateFocusedWindow() is called, com.plato.androie/com.playchat.ui.activity.MainActivity
+D/WindowManager( 1850): finishDrawingWindow: Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity} mDrawState=DRAW_PENDING seqId=0
+V/WindowManager( 1850): Loading animations: picked package=com.plato.androie
+I/WindowManager( 1850): Reparenting to leash, surface=Surface(name=cdadc9 com.plato.androie/com.playchat.ui.activity.MainActivity)/@0xdb845e7, syncState=0, syncCommitDepth=0, leashParent=Surface(name=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060})/@0xe35476
+D/WindowManager( 1850): makeSurface duration=1 leash=Surface(name=Surface(name=cdadc9 com.plato.androie/com.playchat.ui.activity.MainActivity)/@0xdb845e7 - animation-leash of window_animation)/@0x46c5594
+V/WindowManager( 1850): performShowLocked: mDrawState=HAS_DRAWN in Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}
+I/WindowManager( 1850): Reparenting to original parent: Surface(name=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060})/@0xe35476, destroy=true, syncState=0, syncCommitDepth=0, surface=Surface(name=cdadc9 com.plato.androie/com.playchat.ui.activity.MainActivity)/@0xdb845e7
+D/io_stats(  665): !@ Read_top(KB): .android.chrome(29865) 3504 m.plato.androie(29771) 1296 ileged_process0(29984) 616
+D/io_stats(  665): !@ Write_top(KB): m.plato.androie(29771) 648 roid.honeyboard(7899) 344 gle.android.gms(18151) 156
+D/CoreBackPreview( 1850): Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}: Setting back callback null
+V/WindowManager( 1850): Remove Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}: mSurfaceController=Surface(name=com.plato.androie/com.playchat.ui.activity.MainActivity$_29771)/@0xa64c32c mAnimatingExit=false mRemoveOnExit=false mHasSurface=true surfaceShowing=true animating=false app-animation=false mDisplayFrozen=false callers=com.android.server.wm.Session.remove:16 android.view.IWindowSession$Stub.onTransact:794 com.android.server.wm.Session.onTransact:1 android.os.Binder.execTransactInternal:1536 android.os.Binder.execTransact:1480 <bottom of call stack> 
+V/WindowManager( 1850): Loading animations: picked package=com.plato.androie
+I/WindowManager( 1850): Reparenting to leash, surface=Surface(name=cdadc9 com.plato.androie/com.playchat.ui.activity.MainActivity)/@0xdb845e7, syncState=0, syncCommitDepth=0, leashParent=Surface(name=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060})/@0xe35476
+D/WindowManager( 1850): makeSurface duration=1 leash=Surface(name=Surface(name=cdadc9 com.plato.androie/com.playchat.ui.activity.MainActivity)/@0xdb845e7 - animation-leash of window_animation)/@0xe709b8a
+D/WindowManager( 1850): Changing focus from Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity EXITING} to Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity} displayId=0 Callers=com.android.server.wm.WindowState.removeIfPossible:600 com.android.server.wm.Session.remove:16 android.view.IWindowSession$Stub.onTransact:794 com.android.server.wm.Session.onTransact:1 
+D/InsetsSourceProvider( 1850): updateControlForTarget: control=InsetsSourceControl: {56550001 mType=navigationBars initiallyVisible mSurfacePosition=Point(0, 3020) mInsetsHint=Insets{left=0, top=0, right=0, bottom=180}}, target=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.InsetsStateController.onControlTargetChanged:81 com.android.server.wm.InsetsPolicy.updateBarControlTarget:188 com.android.server.wm.DisplayPolicy.updateSystemBarAttributes:269 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:375 com.android.server.wm.WindowState.removeIfPossible:600 
+D/InsetsSourceProvider( 1850): updateControlForTarget: control=InsetsSourceControl: {98c90000 mType=statusBars initiallyVisible mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=102, right=0, bottom=0}}, target=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.InsetsStateController.onControlTargetChanged:81 com.android.server.wm.InsetsPolicy.updateBarControlTarget:175 com.android.server.wm.DisplayPolicy.updateSystemBarAttributes:269 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:375 com.android.server.wm.WindowState.removeIfPossible:600 
+V/SystemKeyManager( 1850): updateFocusedWindow() is called, com.plato.androie/com.playchat.ui.activity.MainActivity
+I/WindowManager( 1850): Reparenting to original parent: Surface(name=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060})/@0xe35476, destroy=true, syncState=0, syncCommitDepth=0, surface=Surface(name=cdadc9 com.plato.androie/com.playchat.ui.activity.MainActivity)/@0xdb845e7
+E/WindowManager( 1850): win=Window{cdadc9 u0 com.plato.androie/com.playchat.ui.activity.MainActivity EXITING} destroySurfaces: appStopped=false cleanupOnResume=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.WindowState.onExitAnimationDone:222 com.android.server.wm.WindowState.onAnimationFinished:161 com.android.server.wm.WindowContainer$$ExternalSyntheticLambda5.onAnimationFinished:26 com.android.server.wm.SurfaceAnimator$$ExternalSyntheticLambda1.run:28 com.android.server.wm.SurfaceAnimator$$ExternalSyntheticLambda0.onAnimationFinished:65 com.android.server.wm.LocalAnimationAdapter$$ExternalSyntheticLambda0.run:10 android.os.Handler.handleCallback:959 
+I/WindowManager( 1850): Destroying surface Surface(name=com.plato.androie/com.playchat.ui.activity.MainActivity$_29771)/@0xa64c32c called by com.android.server.wm.WindowStateAnimator.destroySurface:11 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:54 com.android.server.wm.WindowState.destroySurfaceUnchecked:5 com.android.server.wm.WindowState.destroySurface:126 com.android.server.wm.WindowState.onExitAnimationDone:222 com.android.server.wm.WindowState.onAnimationFinished:161 com.android.server.wm.WindowContainer$$ExternalSyntheticLambda5.onAnimationFinished:26 com.android.server.wm.SurfaceAnimator$$ExternalSyntheticLambda1.run:28 
+D/SGM:GameManager( 1850): identifyForegroundApp. com.plato.androie, mCurrentUserId: 0, callerUserId: 0
+D/InsetsSourceProvider( 1850): updateVisibility: serverVisible=true, clientVisible=false, source=InsetsSource: {56550001 mType=navigationBars mFrame=[0,3020][1440,3200] mVisible=false mFlags= mSideHint=BOTTOM mBoundingRects=null}, controlTarget=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.InsetsSourceProvider.setClientVisible:8 com.android.server.wm.InsetsSourceProvider.updateClientVisibility:20 com.android.server.wm.InsetsStateController.onRequestedVisibleTypesChanged:20 com.android.server.wm.InsetsPolicy.onRequestedVisibleTypesChanged:3 com.android.server.wm.Session.updateRequestedVisibleTypes:30 android.view.IWindowSession$Stub.onTransact:1244 com.android.server.wm.Session.onTransact:1 android.os.Binder.execTransactInternal:1541 android.os.Binder.execTransact:1480 <bottom of call stack> 
+D/InsetsSourceProvider( 1850): updateVisibility: serverVisible=true, clientVisible=false, source=InsetsSource: {98c90000 mType=statusBars mFrame=[0,0][1440,102] mVisible=false mFlags= mSideHint=TOP mBoundingRects=null}, controlTarget=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, from=com.android.server.wm.InsetsSourceProvider.setClientVisible:8 com.android.server.wm.InsetsSourceProvider.updateClientVisibility:20 com.android.server.wm.InsetsStateController.onRequestedVisibleTypesChanged:20 com.android.server.wm.InsetsPolicy.onRequestedVisibleTypesChanged:3 com.android.server.wm.Session.updateRequestedVisibleTypes:30 android.view.IWindowSession$Stub.onTransact:1244 com.android.server.wm.Session.onTransact:1 android.os.Binder.execTransactInternal:1541 android.os.Binder.execTransact:1480 <bottom of call stack> 
+D/WindowManager( 1850): updateSystemBarAttributes: displayId=0, focusedCanBeNavColorWin=false, win=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, navColorWin=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, caller=com.android.server.wm.InsetsStateController.onRequestedVisibleTypesChanged:46 com.android.server.wm.InsetsPolicy.onRequestedVisibleTypesChanged:3 com.android.server.wm.Session.updateRequestedVisibleTypes:30 
+D/WindowManager( 1850): updateSystemBarAttributes: displayId=0, focusedCanBeNavColorWin=false, win=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, navColorWin=null, caller=com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw:17 com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction$1:194 com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace:61 
+D/SurfaceFlinger( 1270):        DEVICE |   0xb40000707b5de6d0 | 0001 | RGBA_8888    |    0.0    0.0 1440.0 3200.0 |    0    0 1440 3200 | com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 (251)
+D/PackageManager( 1850): setEnabledSetting : userId = 0 packageName = com.plato.androie cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 2 callingPackage = com.plato.androie
+D/NetdEventListenerService( 1850): DNS Requested by 100, 10493(com.plato.androie), SUCCESS, 150ms
+D/SurfaceFlinger( 1270):        DEVICE |   0xb40000707b5de6d0 | 0001 | RGBA_8888    |    0.0    0.0 1440.0 3200.0 |    0    0 1440 3200 | com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 (283)
+D/SurfaceFlinger( 1270):        DEVICE |   0xb40000707b5ee2d0 | 0001 | RGBA_8888    |    0.0    0.0 1440.0 3200.0 |    0    0 1440 3200 | com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 (285)
+I/InsetsController(29771): cancelAnimation: types=statusBars navigationBars, animType=1, host=com.plato.androie/com.playchat.ui.activity.MainActivity, from=android.view.InsetsController.notifyFinished:1890 android.view.InsetsAnimationThreadControlRunner$1.lambda$notifyFinished$0:87 android.view.InsetsAnimationThreadControlRunner$1.$r8$lambda$cDFF0h4Ncq-8EXdGszv69jrUu7c:0 
+E/libEGL  (29771): error creating cache file /data/user_de/0/com.plato.androie/cache/com.android.skia.shaders_cache: Operation not permitted (1)
+D/PackageManager( 1850): Don't send PACKAGE_CHANGED for com.plato.androie by WorkManager
+D/NetdEventListenerService( 1850): DNS Requested by 100, 10493(com.plato.androie), SUCCESS, 28ms
+D/FreecessController( 1850): com.plato.androie(10493) is important[12]
+I/SurfaceFlinger( 1270): [com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081] setFrameRateCategory: NoPreference
+E/:core:log(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q GameDownloaderTask: Exception catch during expansion phase. Deleting run game folder.
+E/PlatoApp(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q java.lang.Exception: Directories could not be created: /data/user/0/com.plato.androie/files/g/b33ad16721910b2da374908b439f4319b238682e
+E/PlatoApp(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q o50.g(Unknown Source:192)
+E/PlatoApp(29771): at o50.i(Unknown Source:21)
+E/PlatoApp(29771): at o50.e(Unknown Source:279)
+E/PlatoApp(29771): at o50.doInBackground(Unknown Source:2)
+E/PlatoApp(29771): at android.os.AsyncTask$3.call(AsyncTask.java:394)
+E/PlatoApp(29771): at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+E/PlatoApp(29771): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/PlatoApp(29771): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/PlatoApp(29771): at java.lang.Thread.run(Thread.java:1012)
+D/PackageManager( 1850): setEnabledSetting : userId = 0 packageName = com.plato.androie cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = com.plato.androie
+D/ApplicationPolicy( 1850): getApplicationStateEnabled : pkg = com.plato.androie userId : 0
+D/ApplicationPolicy( 1850): getApplicationComponentState : pkg = com.plato.androie userId : 0
+D/FreecessController( 1850): com.plato.androie(10493) is important[18]
+D/FreecessController( 1850): com.plato.androie(10493) is important[18]
+D/ConnectivityService( 1850): requestNetwork for uid/pid:10493/29771 activeRequest: null callbackRequest: 503 [NetworkRequest [ REQUEST id=504, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+D/ConnectivityService( 1850):    accepting network in place of null for NetworkRequest [ REQUEST id=504, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=504, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=504, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/WifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=504, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=504, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/NetdEventListenerService( 1850): DNS Requested by 100, 10493(com.plato.androie), SUCCESS, 61ms
+D/NetdEventListenerService( 1850): DNS Requested by 100, 10493(com.plato.androie), SUCCESS, 60ms
+D/FreecessController( 1850): com.plato.androie(10493) is important[18]
+D/NetdEventListenerService( 1850): DNS Requested by 100, 10493(com.plato.androie), SUCCESS, 43ms
+W/JobScheduler( 1850): Job didn't exist in JobStore: 8aea6f0 #u0a493/-657644541 com.plato.androie/com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+I/PerProcessNandswap$NandswapHandler( 1850): canDoNandswapProcess fail: com.plato.androie pid:29771 state:0 adj:0
+I/LayerHistory( 1270): com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 is small dirty
+E/libEGL  (29771): error creating cache file /data/user_de/0/com.plato.androie/cache/com.android.opengl.shaders_cache: Operation not permitted (1)
+D/PackageManager( 1850): Don't send PACKAGE_CHANGED for com.plato.androie by WorkManager
+D/io_stats(  665): !@ Read_top(KB): m.plato.androie(29771) 12008 gle.android.gms(18151) 240 .gms.persistent(5143) 200
+D/io_stats(  665): !@ Write_top(KB): kworker/u16:1(190) 1736 m.plato.androie(29771) 608 gle.android.gms(18151) 64
+D/PackageManager( 1850): setEnabledSetting : userId = 0 packageName = com.plato.androie cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 2 callingPackage = com.plato.androie
+D/PackageManager( 1850): Don't send PACKAGE_CHANGED for com.plato.androie by WorkManager
+I/LayerHistory( 1270): com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 Max (can't resolve refresh rate)
+E/:core:log(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q GameDownloaderTask: Exception catch during expansion phase. Deleting run game folder.
+E/PlatoApp(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q java.lang.Exception: Directories could not be created: /data/user/0/com.plato.androie/files/g/b33ad16721910b2da374908b439f4319b238682e
+E/PlatoApp(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q o50.g(Unknown Source:192)
+E/PlatoApp(29771): at o50.i(Unknown Source:21)
+E/PlatoApp(29771): at o50.e(Unknown Source:279)
+E/PlatoApp(29771): at o50.doInBackground(Unknown Source:2)
+E/PlatoApp(29771): at android.os.AsyncTask$3.call(AsyncTask.java:394)
+E/PlatoApp(29771): at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+E/PlatoApp(29771): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/PlatoApp(29771): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/PlatoApp(29771): at java.lang.Thread.run(Thread.java:1012)
+D/PackageManager( 1850): setEnabledSetting : userId = 0 packageName = com.plato.androie cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = com.plato.androie
+D/ApplicationPolicy( 1850): getApplicationStateEnabled : pkg = com.plato.androie userId : 0
+D/ApplicationPolicy( 1850): getApplicationComponentState : pkg = com.plato.androie userId : 0
+D/FreecessController( 1850): com.plato.androie(10493) is important[18]
+D/ConnectivityService( 1850): requestNetwork for uid/pid:10493/29771 activeRequest: null callbackRequest: 505 [NetworkRequest [ REQUEST id=506, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+D/ConnectivityService( 1850):    accepting network in place of null for NetworkRequest [ REQUEST id=506, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=506, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=506, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/WifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=506, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=506, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/WindowManager( 1850): requestTransientBars: swipeTarget=Window{6bbe4d u0 NavigationBar0}, controlTarget=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}, canShowTransient=true, restorePositionTypes=0x0, from=com.android.server.wm.DisplayPolicy$1.onSwipeFromBottom:21 com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:572 
+D/InsetsSourceProvider( 1850): updateFakeControlTarget: fakeControl=InsetsSourceControl: {56550001 mType=navigationBars mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0}}, fakeTarget=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}
+D/InsetsSourceProvider( 1850): updateFakeControlTarget: fakeControl=InsetsSourceControl: {98c90000 mType=statusBars mSurfacePosition=Point(0, 0) mInsetsHint=Insets{left=0, top=0, right=0, bottom=0}}, fakeTarget=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}
+D/SurfaceFlinger( 1270):        DEVICE |   0xb40000707b5f3dd0 | 0001 | RGBA_8888    |    0.0    0.0 1440.0 3200.0 |    0    0 1440 3200 | com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 (768)
+D/SurfaceFlinger( 1270):        DEVICE |   0xb40000707b5ee2d0 | 0001 | RGBA_8888    |    0.0    0.0 1440.0 3200.0 |    0    0 1440 3200 | com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 (769)
+D/PackageManager( 1850): setEnabledSetting : userId = 0 packageName = com.plato.androie cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 2 callingPackage = com.plato.androie
+V/WindowManager( 1850): Transition 79: Set Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie} as transient-hidden-task, caller=com.android.server.wm.Task.forAllTasks:4 com.android.server.wm.WindowContainer.forAllTasks:2 com.android.server.wm.DisplayArea.forAllTasks:9 
+V/WindowManager( 1850): Collecting in transition 79: Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}, caller=com.android.server.wm.Transition$$ExternalSyntheticLambda16.test:93 com.android.server.wm.Task.forAllTasks:4 com.android.server.wm.WindowContainer.forAllTasks:2 com.android.server.wm.DisplayArea.forAllTasks:9 com.android.server.wm.TransitionController.setTransientLaunch:99 
+D/ActivityTaskManager( 1850): scheduleTopResumedActivityChanged, onTop=false, r=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}, caller=com.android.server.wm.ActivityTaskSupervisor.scheduleTopResumedActivityStateLossIfNeeded:11 com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:19 com.android.server.wm.TaskDisplayArea.positionChildAt:270 com.android.server.wm.Task.moveToFront:443 com.android.server.wm.ActivityStartController.startExistingRecents:201 com.android.server.wm.WindowOrganizerController.applyHierarchyOp:31 
+I/HoneySpace.GestureEventController( 4378): SetGestureTaskList, SendGestureTaskList(taskList=[[#1060=com.plato.androie], [#1058=rs.pedjaapps.alogcatroot.app], [#1055=bin.mt.plus.canary]], initPosition=1, runningTaskId=1060, showAnimStartPosition=1, isLeashTargetCenter=false, forSimple=true)
+I/HoneySpace.GestureEventController( 4378): SetGestureTaskList, SendGestureTaskList(taskList=[[#1060=com.plato.androie], [#1058=rs.pedjaapps.alogcatroot.app], [#1055=bin.mt.plus.canary]], initPosition=1, runningTaskId=1060, showAnimStartPosition=1, isLeashTargetCenter=false, forSimple=false)
+I/HoneySpace.TaskListViewModel( 4378): groupTasks: [[#1060=com.plato.androie], [#1058=rs.pedjaapps.alogcatroot.app], [#1055=bin.mt.plus.canary]]
+I/HoneySpace.TaskAdapter( 4378): attach [position: 0], taskData size: 3, item: ComponentInfo{com.plato.androie/com.playchat.ui.activity.SplashActivity}, animReady: 4, firstBindingComplete: 5, view: f0b60e2
+I/HoneySpace.TaskDataRepositoryImpl( 4378): Request icon and label, id=1060, iconAndLabel: IconAndLabel(icon=android.graphics.Bitmap@ca97c94, label=Plato), componentKey: com.plato.androie/com.playchat.ui.activity.SplashActivity#UserHandle{0}
+I/HoneySpace.FilteredItemProvider( 4378): collect filtered items o, [PK(p='com.plato.androie', u=UserHandle{0}), PK(p='rs.pedjaapps.alogcatroot.app', u=UserHandle{0}), PK(p='bin.mt.plus.canary', u=UserHandle{0})]
+I/HoneySpace.SuggestedItemsFacade( 4378): filteredItem : PK(p='com.plato.androie', u=UserHandle{0})
+I/HoneySpace.TaskAdapter( 4378): attach [position: 0], taskData size: 3, item: ComponentInfo{com.plato.androie/com.playchat.ui.activity.SplashActivity}, animReady: 4, firstBindingComplete: 4, view: 5ee7832
+I/HoneySpace.TaskDataRepositoryImpl( 4378): Request icon and label, id=1060, iconAndLabel: IconAndLabel(icon=android.graphics.Bitmap@ca97c94, label=Plato), componentKey: com.plato.androie/com.playchat.ui.activity.SplashActivity#UserHandle{0}
+I/HoneySpace.TaskView( 4378): setTaskLabel, Plato
+V/WindowManager( 1850): Start calculating TransitionInfo based on participants: {ActivityRecord{2bb3d2e u0 com.sec.android.app.launcher/com.android.quickstep.RecentsActivity t1045}, TransientLaunchOverlayToken{3b1c1ea token=android.os.BinderProxy@cb4f5d5}, Task{5ca3165 #1045 type=recents I=com.sec.android.app.launcher/com.android.quickstep.RecentsActivity}, WallpaperWindowToken{b2e2ddf token=android.os.Binder@1f2747e}_<system>, Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}}
+V/WindowManager( 1850):   Final targets: [TransientLaunchOverlayToken{3b1c1ea token=android.os.BinderProxy@cb4f5d5}, Task{5ca3165 #1045 type=recents I=com.sec.android.app.launcher/com.android.quickstep.RecentsActivity}, Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}, WallpaperWindowToken{b2e2ddf token=android.os.Binder@1f2747e}_<system>]
+D/WindowManager( 1850): setActiveRecents, recents=ActivityRecord{2bb3d2e u0 com.sec.android.app.launcher/com.android.quickstep.RecentsActivity t1045}, task=Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}, caller=com.android.server.wm.InputMonitor.setActiveRecents:32 com.android.server.wm.Transition.handleLegacyRecentsStartBehavior:107 com.android.server.wm.Transition.onTransactionReady:2212 
+V/WindowManager( 1850):         {WCT{RemoteToken{f471b92 Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}}} m=TO_BACK f=NONE leash=Surface(name=Task=1060)/@0xc1bf1f4 sb=Rect(0, 0 - 1440, 3200) eb=Rect(0, 0 - 1440, 3200) d=0 taskParent=-1 inset=Rect(0, 100 - 0, 0) dim=true},
+I/HoneySpace.TaskView( 4378): setTaskLabel, Plato
+D/RenderEngine( 1270): [SEC_SF_EFFECTS] drawLayersInternal,1313, Rendering layer com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 at index 1
+V/WindowManager( 1850):         {WCT{RemoteToken{f471b92 Task{bb7afb8 #1060 type=standard A=10493:com.plato.androie}}} m=TO_BACK f=NONE leash=Surface(name=Task=1060)/@0xc1bf1f4 sb=Rect(0, 0 - 1440, 3200) eb=Rect(0, 0 - 1440, 3200) d=0 taskParent=-1 inset=Rect(0, 100 - 0, 0) dim=true},
+D/WindowManager( 1850): Changing focus from Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity} to Window{b30459f u0 com.sec.android.app.launcher/com.android.quickstep.RecentsActivity} displayId=0 Callers=com.android.server.wm.ActivityTaskManagerService.setLastResumedActivityUncheckLocked:264 com.android.server.wm.ActivityTaskManagerService.setFocusedTask:20 com.android.server.wm.ActivityTaskManagerService.focusTopTask:52 android.app.IActivityTaskManager$Stub.onTransact:1865 
+I/InsetsController(29771): onStateChanged: host=com.plato.androie/com.playchat.ui.activity.MainActivity, from=android.view.ViewRootImpl.handleInsetsControlChanged:2888, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1440, 3200), mDisplayCutout=DisplayCutout{insets=Rect(0, 100 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(681, 0 - 759, 100), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1440 displayHeight=3200 physicalDisplayWidth=1440 physicalDisplayHeight=3200 density={3.75} cutoutSpec={M 0, 0 H -10.4 V 26.66666666666667 H 10.4 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=143, center=Point(143, 143)}, RoundedCorner{position=TopRight, radius=143, center=Point(1297, 143)}, RoundedCorner{position=BottomRight, radius=143, center=Point(1297, 3057)}, RoundedCorner{position=BottomLeft, radius=143, center=Point(143, 3057)}]}  mRoundedCornerFrame=Rect(0, 0 - 1440, 3200), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(1275, 0 - 1440, 102) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1440 displayHeight=3200 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {98c90000 mType=statusBars mFrame=[0,0][1440,102] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {98c90005 mType=mandatorySystemGestures mFrame=[0,0][1440,145] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {98c90006 mType=tappableElement mFrame=[0,0][1440,102] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1440,100] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {56550001 mType=navigationBars mFrame=[0,3020][1440,3200] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {56550004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {56550005 mType=mandatorySystemGestures mFrame=[0,3020][1440,3200] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {56550006 mType=tappableElement mFrame=[0,3020][1440,3200] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {56550024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags= mSideHint=NONE mBoundingRects=null} }
+D/InputDispatcher( 1850): Focus left window (0): 72e2f53 com.plato.androie/com.playchat.ui.activity.MainActivity
+D/SurfaceFlinger( 1270):        CLIENT |   0xb40000707b5de6d0 | 0001 | RGBA_8888    |    0.0   34.0 1439.0 3138.0 |    0    0 1439 3200 | com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 (847)
+D/PackageManager( 1850): Don't send PACKAGE_CHANGED for com.plato.androie by WorkManager
+D/RenderEngine( 1270): [SEC_SF_EFFECTS] drawLayersInternal,1313, Rendering layer com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 at index 1
+D/SurfaceFlinger( 1270):        CLIENT |   0xb40000707b5f3dd0 | 0001 | RGBA_8888    |    1.0  101.0  308.0 3017.0 | 1236  395 1440 2328 | com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 (896)
+V/WindowManager( 1850): Setting visibility of Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:19 com.android.server.wm.WindowToken.setClientVisible:49 com.android.server.wm.ActivityRecord.setClientVisible:8 com.android.server.wm.ActivityRecord.commitVisibility:273 com.android.server.wm.TransitionController.finishTransition:766 
+D/PersonaActivityHelper( 1850): token.toString()  Token{b0321da ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}}
+I/SurfaceControlRegistry( 1850): hide, t=syncBuffer_VRI[RecentsTransitionOverlay]@c44d30#47_seqId<16> sc=ActivityRecord{7511f85 u0 com.plato.androie/com.playchat.ui.activity.MainActivity t1060}, caller=android.view.SurfaceControl$Transaction.hide:3258 com.android.server.wm.ActivityRecord.prepareSurfaces:66 com.android.server.wm.WindowContainer.prepareSurfaces:26 com.android.server.wm.TaskFragment.prepareSurfaces:7 com.android.server.wm.Task.prepareSurfaces:10 com.android.server.wm.WindowContainer.prepareSurfaces:26 
+I/SurfaceControlRegistry( 1850): hide, t=syncBuffer_VRI[RecentsTransitionOverlay]@c44d30#47_seqId<16> sc=com.plato.androie/com.playchat.ui.activity.MainActivity$_29771, caller=android.view.SurfaceControl$Transaction.hide:3258 com.android.server.wm.WindowStateAnimator.hide:56 com.android.server.wm.WindowStateAnimator.prepareSurfaceLocked:292 com.android.server.wm.WindowState.prepareSurfaces:95 com.android.server.wm.WindowContainer.prepareSurfaces:26 com.android.server.wm.ActivityRecord.prepareSurfaces:107 
+V/WindowManager( 1850): Relayout Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity}: viewVisibility=8 req=1440x3200 ty=1 d0
+I/SurfaceFlinger( 1270): Layer [ActivityRecord{7511f85 u0 com.plato.[...]ui.activity.MainActivity t1060}#1012] hidden!! flag(1)
+I/SurfaceFlinger( 1270): Layer [com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081] hidden!! flag(1)
+I/InsetsController(29771): onStateChanged: host=com.plato.androie/com.playchat.ui.activity.MainActivity, from=android.view.ViewRootImpl.relayoutWindow:11304, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1440, 3200), mDisplayCutout=DisplayCutout{insets=Rect(0, 100 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(681, 0 - 759, 100), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1440 displayHeight=3200 physicalDisplayWidth=1440 physicalDisplayHeight=3200 density={3.75} cutoutSpec={M 0, 0 H -10.4 V 26.66666666666667 H 10.4 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=143, center=Point(143, 143)}, RoundedCorner{position=TopRight, radius=143, center=Point(1297, 143)}, RoundedCorner{position=BottomRight, radius=143, center=Point(1297, 3057)}, RoundedCorner{position=BottomLeft, radius=143, center=Point(143, 3057)}]}  mRoundedCornerFrame=Rect(0, 0 - 1440, 3200), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(1275, 0 - 1440, 102) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1440 displayHeight=3200 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {98c90000 mType=statusBars mFrame=[0,0][1440,102] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {98c90005 mType=mandatorySystemGestures mFrame=[0,0][1440,145] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {98c90006 mType=tappableElement mFrame=[0,0][1440,102] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1440,100] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {56550001 mType=navigationBars mFrame=[0,3020][1440,3200] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {56550004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {56550005 mType=mandatorySystemGestures mFrame=[0,3020][1440,3200] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {56550006 mType=tappableElement mFrame=[0,3020][1440,3200] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {56550024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags= mSideHint=NONE mBoundingRects=null} }
+D/VRI[MainActivity]@7570f6b(29771): WindowStopped on com.plato.androie/com.playchat.ui.activity.MainActivity set to true
+D/PackageManager( 1850): setEnabledSetting : userId = 0 packageName = com.plato.androie cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = com.plato.androie
+D/ApplicationPolicy( 1850): getApplicationStateEnabled : pkg = com.plato.androie userId : 0
+D/ApplicationPolicy( 1850): getApplicationComponentState : pkg = com.plato.androie userId : 0
+E/PlatoApp(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q java.net.SocketException: socket is closed
+E/PlatoApp(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket$SSLInputStream.read(:com.google.android.gms@254730035@25.47.30 (260400-833691957):90)
+E/PlatoApp(29771): at java.io.DataInputStream.readFully(DataInputStream.java:203)
+E/PlatoApp(29771): at java.io.DataInputStream.readShort(DataInputStream.java:322)
+E/PlatoApp(29771): at NT0.b(Unknown Source:2)
+E/PlatoApp(29771): at Sb1.run(Unknown Source:326)
+D/io_stats(  665): !@ Write_top(KB): kworker/u16:15(7165) 340 m.plato.androie(29771) 280 .android.chrome(29865) 276
+E/WindowManager( 1850): win=Window{72e2f53 u0 com.plato.androie/com.playchat.ui.activity.MainActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:25 com.android.server.wm.ActivityRecord.activityStopped:204 com.android.server.wm.ActivityClientController.activityStopped:95 android.app.IActivityClientController$Stub.onTransact:722 com.android.server.wm.ActivityClientController.onTransact:1 android.os.Binder.execTransactInternal:1541 android.os.Binder.execTransact:1480 
+I/WindowManager( 1850): Destroying surface Surface(name=com.plato.androie/com.playchat.ui.activity.MainActivity$_29771)/@0x119fde9 called by com.android.server.wm.WindowStateAnimator.destroySurface:11 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:54 com.android.server.wm.WindowState.destroySurfaceUnchecked:5 com.android.server.wm.WindowState.destroySurface:126 com.android.server.wm.ActivityRecord.destroySurfaces:25 com.android.server.wm.ActivityRecord.activityStopped:204 com.android.server.wm.ActivityClientController.activityStopped:95 android.app.IActivityClientController$Stub.onTransact:722 
+D/SGM:FgCheckThread( 1850): pkgName: com.plato.androie is not in foreground
+D/SGM:FgCheckThread( 1850): noteStopComponent(), received pkgName: com.plato.androie, focusedPkgName: com.sec.android.app.launcher, userId: 0
+D/PkgPredictorService-SecIpmManagerServiceImpl( 1850): bg information pid:29771 uid:10493 pkgName:com.plato.androie
+I/SurfaceFlinger( 1270): [LayerHierarchy{RequestedLayerState{com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081} no children}] reparent to OffscreenRoot
+I/SurfaceFlinger( 1270): [LayerHierarchy{RequestedLayerState{com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081} no children}] RelativeParent to null
+I/SurfaceFlinger( 1270): id=1081 Removed com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081 (138)
+I/SurfaceFlinger( 1270): destroyed com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081
+I/Layer   ( 1270): id=1081 Destroyed com.plato.androie/com.playchat.ui.activity.MainActivity$_29771#1081
+D/PackageManager( 1850): Don't send PACKAGE_CHANGED for com.plato.androie by WorkManager
+E/:core:log(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q GameDownloaderTask: Exception catch during expansion phase. Deleting run game folder.
+E/PlatoApp(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q java.lang.Exception: Directories could not be created: /data/user/0/com.plato.androie/files/g/b33ad16721910b2da374908b439f4319b238682e
+E/PlatoApp(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q o50.g(Unknown Source:192)
+E/PlatoApp(29771): at o50.i(Unknown Source:21)
+E/PlatoApp(29771): at o50.e(Unknown Source:279)
+E/PlatoApp(29771): at o50.doInBackground(Unknown Source:2)
+E/PlatoApp(29771): at android.os.AsyncTask$3.call(AsyncTask.java:394)
+E/PlatoApp(29771): at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+E/PlatoApp(29771): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/PlatoApp(29771): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/PlatoApp(29771): at java.lang.Thread.run(Thread.java:1012)
+D/ConnectivityService( 1850): requestNetwork for uid/pid:10493/29771 activeRequest: null callbackRequest: 507 [NetworkRequest [ REQUEST id=508, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+D/ConnectivityService( 1850):    accepting network in place of null for NetworkRequest [ REQUEST id=508, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=508, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=508, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/WifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=508, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=508, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+W/m.plato.androie(29771): Couldn't lock the profile file /data/misc/profiles/cur/0/com.plato.androie/primary.prof: Failed to open file '/data/misc/profiles/cur/0/com.plato.androie/primary.prof': Operation not permitted
+W/m.plato.androie(29771): Could not forcefully load profile /data/misc/profiles/cur/0/com.plato.androie/primary.prof
+E/:core:log(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q GameDownloaderTask: game can't be downloaded in 3 retries.
+E/:core:log(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q Failed to download game $gameType revision: ${downloadStatus.revision} url: https://games-prod.platocdn.com/b33ad16721910b2da374908b439f4319b238682e.zip
+E/:core:log(29771): platoId=3u0ryhl7jrv0r-2z7scua871q8q Unable to load game. Game Download Error. pSession:{id: 6yjgaoq82a18-qwbwp17uko50, gameType: pool/87, mmPoolId: null, ownerId: null, is_turn: [], text: null, settings: {"break":2,"gameType":0,"live":1,"trickShots":0}, players amount: 1, finish: null, stats: null, messageType: PSESSION_INVITATION_RESPONSE, state (first 100): null, pSession type: UNDEFINED}. Code: OK
+D/ConnectivityService( 1850): requestNetwork for uid/pid:10493/29771 activeRequest: null callbackRequest: 509 [NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+D/ConnectivityService( 1850):    accepting network in place of null for NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/WifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=510, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/NetdEventListenerService( 1850): DNS Requested by 100, 10493(com.plato.androie), SUCCESS, 33ms
+D/MARs:ActiveTrafficFilter( 1850): filter : com.plato.androie(0)
+D/FreecessController( 1850): com.plato.androie(10493) is important[8]
+I/WM-WorkerWrapper(29771): Worker result SUCCESS for Work [ id=3111440f-cdee-42c2-a5d2-f9ecba853b6f, tags={ com.playchat.service.log.DatadogPosterWorker, Failed to download game $gameType revision: ${downloadStatus.revision} url: https://games-prod.platocdn.com/b33ad16721910b2da374908b439f4319b238682e.zip } ]
+D/io_stats(  665): !@ Write_top(KB): kworker/u16:1(190) 516 m.plato.androie(29771) 480 system_server(1850) 448
+D/NetdEventListenerService( 1850): DNS Requested by 100, 10493(com.plato.androie), 4(FAIL), isBlocked=true, 0ms
+D/NetdEventListenerService( 1850): DNS Requested by 100, 10493(com.plato.androie), 4(FAIL), isBlocked=true, 0ms
+D/ConnectivityService( 1850): requestNetwork for uid/pid:10493/29771 activeRequest: null callbackRequest: 511 [NetworkRequest [ REQUEST id=512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false declaredMethods: ALL
+D/ConnectivityService( 1850):    accepting network in place of null for NetworkRequest [ REQUEST id=512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/OemPaidWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/MultiInternetWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/WifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
+D/UntrustedWifiNetworkFactory( 1850): got request NetworkRequest [ REQUEST id=512, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10493 RequestorUid: 10493 RequestorPkg: com.plato.androie UnderlyingNetworks: Null] ]
