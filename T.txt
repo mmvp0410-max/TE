@@ -1,0 +1,1731 @@
+# classes7.dex
+
+.class public final Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;
+.super Lqy/a;
+.source "VotePostView.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\n\b\u0007\u0018\u0000 I2\u00020\u0001:\u0001JB\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007J\u000f\u0010\t\u001a\u00020\bH\u0002¢\u0006\u0004\b\t\u0010\nJ\u0017\u0010\f\u001a\u00020\u000b2\u0006\u0010\u0005\u001a\u00020\u0004H\u0002¢\u0006\u0004\b\f\u0010\rJ\u000f\u0010\u000e\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u000e\u0010\u000fJ\u000f\u0010\u0010\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0010\u0010\u000fJ\u000f\u0010\u0011\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0011\u0010\u000fJ\u000f\u0010\u0012\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0012\u0010\u000fJ\u000f\u0010\u0013\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u0013\u0010\u000fJ%\u0010\u0017\u001a\u00020\u000b2\u0006\u0010\u0014\u001a\u00020\b2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015H\u0002¢\u0006\u0004\b\u0017\u0010\u0018J%\u0010\u0019\u001a\u00020\u000b2\u0006\u0010\u0014\u001a\u00020\b2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015H\u0002¢\u0006\u0004\b\u0019\u0010\u0018J\u001d\u0010\u001a\u001a\u00020\u000b2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015H\u0002¢\u0006\u0004\b\u001a\u0010\u001bJ\u001d\u0010\u001c\u001a\u00020\u000b2\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015H\u0002¢\u0006\u0004\b\u001c\u0010\u001bJ\u000f\u0010\u001d\u001a\u00020\u000bH\u0002¢\u0006\u0004\b\u001d\u0010\u000fJ\u0015\u0010 \u001a\u00020\u000b2\u0006\u0010\u001f\u001a\u00020\u001e¢\u0006\u0004\b \u0010!J!\u0010%\u001a\u00020\u000b2\b\b\u0002\u0010#\u001a\u00020\"2\b\b\u0002\u0010$\u001a\u00020\b¢\u0006\u0004\b%\u0010&J8\u0010,\u001a\u00020\u000b2)\u0010+\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*¢\u0006\u0004\b,\u0010-J8\u0010.\u001a\u00020\u000b2)\u0010+\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*¢\u0006\u0004\b.\u0010-J8\u0010/\u001a\u00020\u000b2)\u0010+\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*¢\u0006\u0004\b/\u0010-J-\u00101\u001a\u00020\u000b2\u0006\u00100\u001a\u00020\b2\u0006\u0010\u0014\u001a\u00020\b2\u000e\b\u0002\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0015¢\u0006\u0004\b1\u00102R\u0016\u0010$\u001a\u00020\b8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b3\u0010\u000eR\u0016\u0010#\u001a\u00020\"8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b4\u00105R9\u00108\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b6\u00107R9\u0010:\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b9\u00107R9\u0010<\u001a%\u0012\u0013\u0012\u00110\b¢\u0006\f\b(\u0012\b\b)\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u000b\u0018\u00010\'j\u0004\u0018\u0001`*8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b;\u00107R\u0016\u0010@\u001a\u00020=8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b>\u0010?R\"\u0010H\u001a\u00020A8\u0006@\u0006X\u0087.¢\u0006\u0012\n\u0004\bB\u0010C\u001a\u0004\bD\u0010E\"\u0004\bF\u0010G¨\u0006K"
+    }
+    d2 = {
+        "Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;",
+        "Landroidx/constraintlayout/widget/ConstraintLayout;",
+        "Landroid/content/Context;",
+        "context",
+        "Landroid/util/AttributeSet;",
+        "attrs",
+        "<init>",
+        "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
+        "",
+        "i0",
+        "()Z",
+        "",
+        "g0",
+        "(Landroid/util/AttributeSet;)V",
+        "Z",
+        "()V",
+        "c0",
+        "q0",
+        "a0",
+        "o0",
+        "skipAnimation",
+        "Lkotlin/Function0;",
+        "onAnimationEnd",
+        "n0",
+        "(ZLkotlin/jvm/functions/Function0;)V",
+        "b0",
+        "S",
+        "(Lkotlin/jvm/functions/Function0;)V",
+        "W",
+        "j0",
+        "",
+        "value",
+        "setVotesCount",
+        "(I)V",
+        "Lrz/b;",
+        "voteType",
+        "isDisabled",
+        "r0",
+        "(Lrz/b;Z)V",
+        "Lkotlin/Function1;",
+        "Lkotlin/ParameterName;",
+        "name",
+        "Lcom/jodelapp/jodelandroidv3/view/vote_view/VoteButtonClickListener;",
+        "onClick",
+        "setOnUpVoteClickListener",
+        "(Lkotlin/jvm/functions/Function1;)V",
+        "setOnDownVoteClickListener",
+        "setOnThanksClickListener",
+        "isThankable",
+        "k0",
+        "(ZZLkotlin/jvm/functions/Function0;)V",
+        "C",
+        "D",
+        "Lrz/b;",
+        "E",
+        "Lkotlin/jvm/functions/Function1;",
+        "onUpVoteClicked",
+        "F",
+        "onDownVoteClicked",
+        "G",
+        "onThanksClicked",
+        "La20/q3;",
+        "H",
+        "La20/q3;",
+        "binding",
+        "Lcom/jodelapp/jodelandroidv3/usecases/p0;",
+        "I",
+        "Lcom/jodelapp/jodelandroidv3/usecases/p0;",
+        "h0",
+        "()Lcom/jodelapp/jodelandroidv3/usecases/p0;",
+        "setLiteExperienceEnabled",
+        "(Lcom/jodelapp/jodelandroidv3/usecases/p0;)V",
+        "isLiteExperienceEnabled",
+        "J",
+        "a",
+        "app_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final J:Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;
+
+.field public static final K:I
+
+
+# instance fields
+.field public C:Z
+
+.field public D:Lrz/b;
+
+.field public E:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public F:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public G:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public H:La20/q3;
+
+.field public I:Lcom/jodelapp/jodelandroidv3/usecases/p0;
+    .annotation runtime Ljavax/inject/Inject;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 2
+
+    .line 1
+    new-instance v0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;
+
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 7
+    sput-object v0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->J:Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView$a;
+
+    .line 9
+    const/16 v0, 0x8
+
+    .line 11
+    sput v0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->K:I
+
+    .line 13
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .registers 4
+
+    .line 1
+    const-string v0, "context"
+
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    const-string v0, "attrs"
+
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    invoke-direct {p0, p1, p2}, Lqy/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    .line 14
+    sget-object v0, Lrz/b;->a:Lrz/b;
+
+    .line 16
+    iput-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->D:Lrz/b;
+
+    .line 18
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 21
+    move-result-object p1
+
+    .line 22
+    const/4 v0, 0x1
+
+    .line 23
+    invoke-static {p1, p0, v0}, La20/q3;->c(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)La20/q3;
+
+    .line 26
+    move-result-object p1
+
+    .line 27
+    const-string v0, "inflate(...)"
+
+    .line 29
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 32
+    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 34
+    invoke-virtual {p0, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->g0(Landroid/util/AttributeSet;)V
+
+    .line 37
+    invoke-direct {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->c0()V
+
+    .line 40
+    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->j0()V
+
+    .line 43
+    return-void
+.end method
+
+.method public static synthetic I(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 3
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->T(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic J(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+    .registers 2
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->d0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic K(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 3
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->X(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic L(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)Lkotlin/Unit;
+    .registers 1
+
+    .line 1
+    invoke-static {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->p0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)Lkotlin/Unit;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static synthetic M(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 3
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->V(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic N(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+    .registers 2
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->e0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic O(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 3
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->Y(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic P(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+    .registers 2
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->f0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic Q(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 3
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->U(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic R()Lkotlin/Unit;
+    .registers 1
+
+    .line 1
+    invoke-static {}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->m0()Lkotlin/Unit;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static final T(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 5
+
+    .line 1
+    sget-object p2, Lcom/daimajia/androidanimations/library/Techniques;->SlideOutUp:Lcom/daimajia/androidanimations/library/Techniques;
+
+    .line 3
+    invoke-static {p2}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
+
+    .line 6
+    move-result-object p2
+
+    .line 7
+    const-string v0, "with(...)"
+
+    .line 9
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 12
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 14
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 16
+    const-string v1, "upVoteButton"
+
+    .line 18
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 21
+    new-instance v1, Lqy/j;
+
+    .line 23
+    invoke-direct {v1, p0, p1}, Lqy/j;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
+
+    .line 26
+    const-wide/16 p0, 0x12c
+
+    .line 28
+    invoke-static {p2, p0, p1, v0, v1}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
+
+    .line 31
+    return-void
+.end method
+
+.method public static final U(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 12
+
+    .line 1
+    iget-object p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 3
+    iget-object p2, p2, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 5
+    const-string v0, "upVoteButton"
+
+    .line 7
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    invoke-static {p2}, Lex/m;->x(Landroid/view/View;)V
+
+    .line 13
+    iget-object p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 15
+    iget-object p2, p2, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 17
+    invoke-static {p2}, Lex/m;->n(Landroid/view/View;)V
+
+    .line 20
+    sget-object p2, Lcom/daimajia/androidanimations/library/Techniques;->SlideInUp:Lcom/daimajia/androidanimations/library/Techniques;
+
+    .line 22
+    invoke-static {p2}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
+
+    .line 25
+    move-result-object p2
+
+    .line 26
+    const-string v1, "with(...)"
+
+    .line 28
+    invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 31
+    iget-object v2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 33
+    iget-object v2, v2, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 35
+    const-string v3, "thanksButton"
+
+    .line 37
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 40
+    new-instance v3, Lqy/k;
+
+    .line 42
+    invoke-direct {v3, p0, p1}, Lqy/k;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
+
+    .line 45
+    const-wide/16 v4, 0x190
+
+    .line 47
+    invoke-static {p2, v4, v5, v2, v3}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
+
+    .line 50
+    sget-object p1, Lcom/daimajia/androidanimations/library/Techniques;->SlideInDown:Lcom/daimajia/androidanimations/library/Techniques;
+
+    .line 52
+    invoke-static {p1}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
+
+    .line 55
+    move-result-object v2
+
+    .line 56
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 59
+    iget-object p0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 61
+    iget-object v5, p0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 63
+    invoke-static {v5, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 66
+    const/4 v7, 0x4
+
+    .line 67
+    const/4 v8, 0x0
+
+    .line 68
+    const-wide/16 v3, 0x0
+
+    .line 70
+    const/4 v6, 0x0
+
+    .line 71
+    invoke-static/range {v2 .. v8}, Lcx/p;->q(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;ILjava/lang/Object;)V
+
+    .line 74
+    return-void
+.end method
+
+.method public static final V(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->c0()V
+
+    .line 4
+    invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    .line 7
+    return-void
+.end method
+
+.method public static final X(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 12
+
+    .line 1
+    iget-object p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 3
+    iget-object p2, p2, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 5
+    const-string v0, "thanksButton"
+
+    .line 7
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    invoke-static {p2}, Lex/m;->x(Landroid/view/View;)V
+
+    .line 13
+    iget-object p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 15
+    iget-object p2, p2, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 17
+    invoke-static {p2}, Lex/m;->n(Landroid/view/View;)V
+
+    .line 20
+    sget-object p2, Lcom/daimajia/androidanimations/library/Techniques;->SlideInDown:Lcom/daimajia/androidanimations/library/Techniques;
+
+    .line 22
+    invoke-static {p2}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
+
+    .line 25
+    move-result-object p2
+
+    .line 26
+    const-string v1, "with(...)"
+
+    .line 28
+    invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 31
+    iget-object v2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 33
+    iget-object v2, v2, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 35
+    const-string v3, "upVoteButton"
+
+    .line 37
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 40
+    new-instance v3, Lqy/i;
+
+    .line 42
+    invoke-direct {v3, p0, p1}, Lqy/i;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
+
+    .line 45
+    const-wide/16 v4, 0x190
+
+    .line 47
+    invoke-static {p2, v4, v5, v2, v3}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
+
+    .line 50
+    sget-object p1, Lcom/daimajia/androidanimations/library/Techniques;->SlideInUp:Lcom/daimajia/androidanimations/library/Techniques;
+
+    .line 52
+    invoke-static {p1}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
+
+    .line 55
+    move-result-object v2
+
+    .line 56
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 59
+    iget-object p0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 61
+    iget-object v5, p0, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 63
+    invoke-static {v5, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 66
+    const/4 v7, 0x4
+
+    .line 67
+    const/4 v8, 0x0
+
+    .line 68
+    const-wide/16 v3, 0x0
+
+    .line 70
+    const/4 v6, 0x0
+
+    .line 71
+    invoke-static/range {v2 .. v8}, Lcx/p;->q(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;ILjava/lang/Object;)V
+
+    .line 74
+    return-void
+.end method
+
+.method public static final Y(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;Landroid/animation/Animator;)V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->c0()V
+
+    .line 4
+    invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    .line 7
+    return-void
+.end method
+
+.method private final c0()V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 3
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 5
+    new-instance v1, Lqy/b;
+
+    .line 7
+    invoke-direct {v1, p0}, Lqy/b;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)V
+
+    .line 10
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 13
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 15
+    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
+
+    .line 17
+    new-instance v1, Lqy/c;
+
+    .line 19
+    invoke-direct {v1, p0}, Lqy/c;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)V
+
+    .line 22
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 25
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 27
+    iget-object v0, v0, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 29
+    new-instance v1, Lqy/d;
+
+    .line 31
+    invoke-direct {v1, p0}, Lqy/d;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)V
+
+    .line 34
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 37
+    return-void
+.end method
+
+.method public static final d0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->q0()V
+
+    .line 4
+    return-void
+.end method
+
+.method public static final e0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->a0()V
+
+    .line 4
+    return-void
+.end method
+
+.method public static final f0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Landroid/view/View;)V
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->o0()V
+
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic l0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;ZZLkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
+    .registers 6
+
+    .line 1
+    and-int/lit8 p4, p4, 0x4
+
+    .line 3
+    if-eqz p4, :cond_9
+
+    .line 5
+    new-instance p3, Lqy/g;
+
+    .line 7
+    invoke-direct {p3}, Lqy/g;-><init>()V
+
+    .line 10
+    :cond_9
+    invoke-virtual {p0, p1, p2, p3}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->k0(ZZLkotlin/jvm/functions/Function0;)V
+
+    .line 13
+    return-void
+.end method
+
+.method public static final m0()Lkotlin/Unit;
+    .registers 1
+
+    .line 1
+    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public static final p0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)Lkotlin/Unit;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->G:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    if-eqz v0, :cond_d
+
+    .line 5
+    iget-boolean p0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
+
+    .line 7
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 10
+    move-result-object p0
+
+    .line 11
+    invoke-interface {v0, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    :cond_d
+    sget-object p0, Lkotlin/Unit;->a:Lkotlin/Unit;
+
+    .line 16
+    return-object p0
+.end method
+
+.method public static synthetic s0(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lrz/b;ZILjava/lang/Object;)V
+    .registers 5
+
+    .line 1
+    and-int/lit8 p4, p3, 0x1
+
+    .line 3
+    if-eqz p4, :cond_6
+
+    .line 5
+    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->D:Lrz/b;
+
+    .line 7
+    :cond_6
+    and-int/lit8 p3, p3, 0x2
+
+    .line 9
+    if-eqz p3, :cond_c
+
+    .line 11
+    iget-boolean p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
+
+    .line 13
+    :cond_c
+    invoke-virtual {p0, p1, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->r0(Lrz/b;Z)V
+
+    .line 16
+    return-void
+.end method
+
+
+# virtual methods
+.method public final S(Lkotlin/jvm/functions/Function0;)V
+    .registers 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->Z()V
+
+    .line 4
+    sget-object v0, Lcom/daimajia/androidanimations/library/Techniques;->Tada:Lcom/daimajia/androidanimations/library/Techniques;
+
+    .line 6
+    invoke-static {v0}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
+
+    .line 9
+    move-result-object v0
+
+    .line 10
+    const-string v1, "with(...)"
+
+    .line 12
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 15
+    iget-object v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 17
+    iget-object v1, v1, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 19
+    const-string v2, "upVoteButton"
+
+    .line 21
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 24
+    new-instance v2, Lqy/h;
+
+    .line 26
+    invoke-direct {v2, p0, p1}, Lqy/h;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
+
+    .line 29
+    const-wide/16 v3, 0x12c
+
+    .line 31
+    invoke-static {v0, v3, v4, v1, v2}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
+
+    .line 34
+    return-void
+.end method
+
+.method public final W(Lkotlin/jvm/functions/Function0;)V
+    .registers 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->Z()V
+
+    .line 4
+    sget-object v0, Lcom/daimajia/androidanimations/library/Techniques;->SlideOutDown:Lcom/daimajia/androidanimations/library/Techniques;
+
+    .line 6
+    invoke-static {v0}, Lcom/daimajia/androidanimations/library/YoYo;->with(Lcom/daimajia/androidanimations/library/Techniques;)Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;
+
+    .line 9
+    move-result-object v0
+
+    .line 10
+    const-string v1, "with(...)"
+
+    .line 12
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 15
+    iget-object v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 17
+    iget-object v1, v1, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 19
+    const-string v2, "thanksButton"
+
+    .line 21
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 24
+    new-instance v2, Lqy/f;
+
+    .line 26
+    invoke-direct {v2, p0, p1}, Lqy/f;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;Lkotlin/jvm/functions/Function0;)V
+
+    .line 29
+    const-wide/16 v3, 0x12c
+
+    .line 31
+    invoke-static {v0, v3, v4, v1, v2}, Lcx/p;->p(Lcom/daimajia/androidanimations/library/YoYo$AnimationComposer;JLandroid/view/View;Lcom/daimajia/androidanimations/library/YoYo$AnimatorCallback;)V
+
+    .line 34
+    return-void
+.end method
+
+.method public final Z()V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 3
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 9
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 11
+    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
+
+    .line 13
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 16
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 18
+    iget-object v0, v0, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 20
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 23
+    return-void
+.end method
+
+.method public final a0()V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->F:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    if-eqz v0, :cond_d
+
+    .line 5
+    iget-boolean v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
+
+    .line 7
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-interface {v0, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    :cond_d
+    return-void
+.end method
+
+.method public final b0(ZLkotlin/jvm/functions/Function0;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z",
+            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_19
+
+    .line 3
+    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 5
+    iget-object p1, p1, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 7
+    const-string v0, "thanksButton"
+
+    .line 9
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 12
+    invoke-static {p1}, Lex/m;->x(Landroid/view/View;)V
+
+    .line 15
+    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 17
+    iget-object p1, p1, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 19
+    invoke-static {p1}, Lex/m;->n(Landroid/view/View;)V
+
+    .line 22
+    invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    .line 25
+    return-void
+
+    .line 26
+    :cond_19
+    invoke-virtual {p0, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->W(Lkotlin/jvm/functions/Function0;)V
+
+    .line 29
+    return-void
+.end method
+
+.method public final g0(Landroid/util/AttributeSet;)V
+    .registers 5
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    .line 8
+    move-result-object v0
+
+    .line 9
+    sget-object v1, Lz10/a;->VotePostView:[I
+
+    .line 11
+    const/4 v2, 0x0
+
+    .line 12
+    invoke-virtual {v0, p1, v1, v2, v2}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    .line 15
+    move-result-object p1
+
+    .line 16
+    :try_start_f
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 18
+    iget-object v0, v0, La20/q3;->f:Lcom/pixplicity/fontview/FontTextView;
+
+    .line 20
+    const/4 v1, 0x1
+
+    .line 21
+    invoke-virtual {p1, v2, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    .line 24
+    move-result v1
+
+    .line 25
+    invoke-static {v0, v1}, Lex/m;->p(Landroid/view/View;Z)V
+    :try_end_1b
+    .catchall {:try_start_f .. :try_end_1b} :catchall_1f
+
+    .line 28
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 31
+    return-void
+
+    .line 32
+    :catchall_1f
+    move-exception v0
+
+    .line 33
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 36
+    throw v0
+.end method
+
+.method public final h0()Lcom/jodelapp/jodelandroidv3/usecases/p0;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->I:Lcom/jodelapp/jodelandroidv3/usecases/p0;
+
+    .line 3
+    if-eqz v0, :cond_5
+
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_5
+    const-string v0, "isLiteExperienceEnabled"
+
+    .line 8
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->A(Ljava/lang/String;)V
+
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    return-object v0
+.end method
+
+.method public final i0()Z
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_8
+
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    return v0
+
+    .line 9
+    :cond_8
+    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->h0()Lcom/jodelapp/jodelandroidv3/usecases/p0;
+
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {v0}, Lcom/jodelapp/jodelandroidv3/usecases/p0;->a()Z
+
+    .line 16
+    move-result v0
+
+    .line 17
+    return v0
+.end method
+
+.method public final j0()V
+    .registers 4
+
+    .line 1
+    invoke-virtual {p0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->i0()Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_20
+
+    .line 7
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 9
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 11
+    invoke-virtual {v0}, Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;->b()V
+
+    .line 14
+    const v0, 0x7f080652
+
+    .line 17
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 20
+    move-result-object v0
+
+    .line 21
+    const v1, 0x7f080654
+
+    .line 24
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 27
+    move-result-object v1
+
+    .line 28
+    invoke-static {v0, v1}, Lkotlin/TuplesKt;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 31
+    move-result-object v0
+
+    .line 32
+    goto :goto_32
+
+    .line 33
+    :cond_20
+    const v0, 0x7f080651
+
+    .line 36
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 39
+    move-result-object v0
+
+    .line 40
+    const v1, 0x7f080653
+
+    .line 43
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 46
+    move-result-object v1
+
+    .line 47
+    invoke-static {v0, v1}, Lkotlin/TuplesKt;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    .line 50
+    move-result-object v0
+
+    .line 51
+    :goto_32
+    invoke-virtual {v0}, Lkotlin/Pair;->a()Ljava/lang/Object;
+
+    .line 54
+    move-result-object v1
+
+    .line 55
+    check-cast v1, Ljava/lang/Number;
+
+    .line 57
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 60
+    move-result v1
+
+    .line 61
+    invoke-virtual {v0}, Lkotlin/Pair;->b()Ljava/lang/Object;
+
+    .line 64
+    move-result-object v0
+
+    .line 65
+    check-cast v0, Ljava/lang/Number;
+
+    .line 67
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    .line 70
+    move-result v0
+
+    .line 71
+    iget-object v2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 73
+    iget-object v2, v2, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
+
+    .line 75
+    invoke-virtual {v2, v1}, Landroidx/appcompat/widget/m;->setImageResource(I)V
+
+    .line 78
+    iget-object v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 80
+    iget-object v1, v1, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 82
+    invoke-virtual {v1, v0}, Landroidx/appcompat/widget/m;->setImageResource(I)V
+
+    .line 85
+    return-void
+.end method
+
+.method public final k0(ZZLkotlin/jvm/functions/Function0;)V
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(ZZ",
+            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "onAnimationEnd"
+
+    .line 3
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    if-eqz p1, :cond_b
+
+    .line 8
+    invoke-virtual {p0, p2, p3}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->n0(ZLkotlin/jvm/functions/Function0;)V
+
+    .line 11
+    return-void
+
+    .line 12
+    :cond_b
+    invoke-virtual {p0, p2, p3}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->b0(ZLkotlin/jvm/functions/Function0;)V
+
+    .line 15
+    return-void
+.end method
+
+.method public final n0(ZLkotlin/jvm/functions/Function0;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z",
+            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_19
+
+    .line 3
+    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 5
+    iget-object p1, p1, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 7
+    const-string v0, "upVoteButton"
+
+    .line 9
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 12
+    invoke-static {p1}, Lex/m;->x(Landroid/view/View;)V
+
+    .line 15
+    iget-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 17
+    iget-object p1, p1, La20/q3;->c:Landroid/widget/ImageView;
+
+    .line 19
+    invoke-static {p1}, Lex/m;->n(Landroid/view/View;)V
+
+    .line 22
+    invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    .line 25
+    return-void
+
+    .line 26
+    :cond_19
+    invoke-virtual {p0, p2}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->S(Lkotlin/jvm/functions/Function0;)V
+
+    .line 29
+    return-void
+.end method
+
+.method public final o0()V
+    .registers 3
+
+    .line 1
+    new-instance v0, Lqy/e;
+
+    .line 3
+    invoke-direct {v0, p0}, Lqy/e;-><init>(Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;)V
+
+    .line 6
+    const/4 v1, 0x0
+
+    .line 7
+    invoke-virtual {p0, v1, v0}, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->b0(ZLkotlin/jvm/functions/Function0;)V
+
+    .line 10
+    return-void
+.end method
+
+.method public final q0()V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->E:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    if-eqz v0, :cond_d
+
+    .line 5
+    iget-boolean v1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
+
+    .line 7
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-interface {v0, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    :cond_d
+    return-void
+.end method
+
+.method public final r0(Lrz/b;Z)V
+    .registers 5
+
+    .line 1
+    const-string v0, "voteType"
+
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 8
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 10
+    invoke-virtual {p1}, Lrz/b;->e()Z
+
+    .line 13
+    move-result v1
+
+    .line 14
+    xor-int/lit8 v1, v1, 0x1
+
+    .line 16
+    invoke-virtual {v0, v1}, Landroid/view/View;->setActivated(Z)V
+
+    .line 19
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 21
+    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
+
+    .line 23
+    invoke-virtual {p1}, Lrz/b;->e()Z
+
+    .line 26
+    move-result v1
+
+    .line 27
+    xor-int/lit8 v1, v1, 0x1
+
+    .line 29
+    invoke-virtual {v0, v1}, Landroid/view/View;->setActivated(Z)V
+
+    .line 32
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 34
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 36
+    invoke-virtual {v0, p2}, Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;->setReadOnly(Z)V
+
+    .line 39
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 41
+    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
+
+    .line 43
+    invoke-virtual {v0, p2}, Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;->setReadOnly(Z)V
+
+    .line 46
+    invoke-virtual {p1}, Lrz/b;->e()Z
+
+    .line 49
+    move-result v0
+
+    .line 50
+    if-eqz v0, :cond_42
+
+    .line 52
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 54
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 56
+    invoke-virtual {v0, p2}, Landroid/view/View;->setSelected(Z)V
+
+    .line 59
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 61
+    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
+
+    .line 63
+    invoke-virtual {v0, p2}, Landroid/view/View;->setSelected(Z)V
+
+    .line 66
+    goto :goto_6d
+
+    .line 67
+    :cond_42
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 69
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 71
+    invoke-virtual {p1}, Lrz/b;->f()Z
+
+    .line 74
+    move-result v1
+
+    .line 75
+    invoke-virtual {v0, v1}, Landroid/view/View;->setSelected(Z)V
+
+    .line 78
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 80
+    iget-object v0, v0, La20/q3;->b:Lcom/jodelapp/jodelandroidv3/view/ExtendedImageButton;
+
+    .line 82
+    invoke-virtual {p1}, Lrz/b;->b()Z
+
+    .line 85
+    move-result v1
+
+    .line 86
+    invoke-virtual {v0, v1}, Landroid/view/View;->setSelected(Z)V
+
+    .line 89
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->D:Lrz/b;
+
+    .line 91
+    invoke-virtual {v0}, Lrz/b;->e()Z
+
+    .line 94
+    move-result v0
+
+    .line 95
+    if-eqz v0, :cond_6d
+
+    .line 97
+    invoke-virtual {p1}, Lrz/b;->f()Z
+
+    .line 100
+    move-result v0
+
+    .line 101
+    if-eqz v0, :cond_6d
+
+    .line 103
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 105
+    iget-object v0, v0, La20/q3;->d:Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;
+
+    .line 107
+    invoke-virtual {v0}, Lcom/jodelapp/jodelandroidv3/widget/AnimatableImageView;->c()V
+
+    .line 110
+    :cond_6d
+    :goto_6d
+    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->D:Lrz/b;
+
+    .line 112
+    iput-boolean p2, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->C:Z
+
+    .line 114
+    return-void
+.end method
+
+.method public final setLiteExperienceEnabled(Lcom/jodelapp/jodelandroidv3/usecases/p0;)V
+    .registers 3
+
+    .line 1
+    const-string v0, "<set-?>"
+
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->I:Lcom/jodelapp/jodelandroidv3/usecases/p0;
+
+    .line 8
+    return-void
+.end method
+
+.method public final setOnDownVoteClickListener(Lkotlin/jvm/functions/Function1;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->F:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    return-void
+.end method
+
+.method public final setOnThanksClickListener(Lkotlin/jvm/functions/Function1;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->G:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    return-void
+.end method
+
+.method public final setOnUpVoteClickListener(Lkotlin/jvm/functions/Function1;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->E:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    return-void
+.end method
+
+.method public final setVotesCount(I)V
+    .registers 5
+
+    .line 1
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 3
+    iget-object v0, v0, La20/q3;->f:Lcom/pixplicity/fontview/FontTextView;
+
+    .line 5
+    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 12
+    iget-object v0, p0, Lcom/jodelapp/jodelandroidv3/view/vote_view/VotePostView;->H:La20/q3;
+
+    .line 14
+    iget-object v0, v0, La20/q3;->f:Lcom/pixplicity/fontview/FontTextView;
+
+    .line 16
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 19
+    move-result-object v1
+
+    .line 20
+    const v2, 0x7f1301c1
+
+    .line 23
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    .line 26
+    move-result-object v1
+
+    .line 27
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 29
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 32
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 35
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 38
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 41
+    move-result-object p1
+
+    .line 42
+    invoke-virtual {v0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    .line 45
+    return-void
+.end method
